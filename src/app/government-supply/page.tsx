@@ -23,9 +23,14 @@ export default function GovernmentSupplyPage() {
             </h1>
           </ScrollReveal>
           <ScrollReveal delay={0.25}>
-            <p className="font-sans text-[18px] text-text-secondary leading-relaxed max-w-3xl">
-              Siddhi Binayak Overseas Pvt. Ltd. Nepal actively supports public-sector procurement in Nepal by acting as a single coordination partner across sourcing, evaluation, and execution. We reduce procurement complexity while maintaining absolute transparency and accountability.
-            </p>
+            <div className="flex flex-col gap-4 font-sans text-[18px] text-text-secondary leading-relaxed max-w-3xl">
+              <p>
+                Navigating international trade regulations can be challenging. Siddhi Binayak Overseas Pvt. Ltd. Nepal streamlines the entire acquisition lifecycle for Nepal's state institutions, delivering an end-to-end framework that bridges global manufacturers with local requirements.
+              </p>
+              <p>
+                By collaborating directly with ministerial departments and public agencies, we decode complex technical specifications and match them with top-tier international suppliers, guaranteeing that critical milestones and rigorous quality thresholds are met without delay.
+              </p>
+            </div>
           </ScrollReveal>
         </div>
       </section>
