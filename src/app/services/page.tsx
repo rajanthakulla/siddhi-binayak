@@ -9,7 +9,7 @@ const SERVICES = [
   {
     title: "General Trading",
     icon: Globe2,
-    img: "/images/service_trading_1781206620945.png",
+    img: "/images/service_trading_new.jpg",
     desc: "Multi-sector trading of certified products across industrial, safety, infrastructure, healthcare, and consumer categories through verified global suppliers.",
     sub: ["Industrial Equipment", "Safety & PPE", "Healthcare Consumables", "Infrastructure Supplies"],
     clients: "B2B Enterprises, Public Organizations, Wholesale Chains"
@@ -84,10 +84,10 @@ export default function ServicesPage() {
           return (
             <ScrollReveal key={idx} delay={0.1}>
               <div className="container">
-                <div className={`flex flex-col lg:flex-row items-center gap-16 ${isEven ? "" : "lg:flex-row-reverse"}`}>
+                <div className={`flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16 ${isEven ? "" : "lg:flex-row-reverse"}`}>
                   
                   {/* Text Content */}
-                  <div className="flex-1 flex flex-col gap-6">
+                  <div className="w-full lg:w-[55%] flex flex-col gap-6">
                     <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
                       <div className="w-16 h-16 shrink-0 rounded-2xl bg-white border border-surface-border shadow-sm flex items-center justify-center text-accent-primary">
                         <srv.icon size={32} />
@@ -122,7 +122,7 @@ export default function ServicesPage() {
                   </div>
 
                   {/* Actual Image */}
-                  <div className="flex-1 w-full aspect-video lg:aspect-square bg-[#111111] border border-surface-border rounded-[2rem] relative overflow-hidden group shadow-[0_4px_24px_rgba(0,0,0,0.02)]">
+                  <div className="w-full lg:w-[40%] aspect-video lg:aspect-[4/3] bg-[#111111] border border-surface-border rounded-[2rem] relative overflow-hidden group shadow-[0_4px_24px_rgba(0,0,0,0.02)]">
                     <Image src={srv.img} alt={srv.title} fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                   </div>
