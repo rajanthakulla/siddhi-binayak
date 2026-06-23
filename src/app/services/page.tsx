@@ -33,7 +33,7 @@ const SERVICES = [
   {
     title: "Product Sourcing",
     icon: PackageSearch,
-    img: "/images/service_sourcing_1781206659125.png",
+    img: "/images/service_sourcing_new.jpg",
     desc: "Strategic sourcing from authorized OEMs and manufacturers, ensuring quality assurance, competitive pricing, and consistent supply.",
     sub: ["OEM Verification", "Quality Assurance", "Volume Procurement", "Supplier Audits"],
     clients: "Industrial Projects, Corporate Hubs, Medical Facilities"
