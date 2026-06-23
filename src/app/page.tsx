@@ -253,7 +253,7 @@ export default function Home() {
                     Siddhi Binayak Overseas Pvt. Ltd. Nepal is a premier Nepal-based trading and import/export company. We specialize in supplying the public sector, sourcing for B2B operations, and delivering multi-sector trade solutions. Driven by a commitment to quality, full compliance, and on-time delivery, we provide government agencies, public institutions, and businesses across Nepal with supply chains they can trust.
                   </p>
                   <p>
-                    Our success is built on direct partnerships with verified manufacturers, transparent sourcing, and delivery processes that are always audit-ready. From the initial order to final handover, we ensure every step is smooth and fully documented.
+                    Our success is built on direct partnerships with verified manufacturers, transparent sourcing, and delivery processes that are always audit-ready. From the initial order to final handover, we ensure every step is smooth and fully documented. Our dedicated team works closely with you to understand your exact requirements and provide tailored solutions that drive operational excellence.
                   </p>
                 </div>
               </div>
