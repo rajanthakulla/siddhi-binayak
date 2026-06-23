@@ -25,10 +25,10 @@ export default function GovernmentSupplyPage() {
           <ScrollReveal delay={0.25}>
             <div className="flex flex-col gap-4 font-sans text-[18px] text-text-secondary leading-relaxed max-w-3xl">
               <p>
-                Navigating international trade regulations can be challenging. Siddhi Binayak Overseas Pvt. Ltd. Nepal streamlines the entire acquisition lifecycle for Nepal's state institutions, delivering an end-to-end framework that bridges global manufacturers with local requirements.
+                Securing critical supplies for state institutions requires precision, strict compliance, and a robust global network. At Siddhi Binayak Overseas Pvt. Ltd. Nepal, we engineer end-to-end procurement solutions that seamlessly connect international manufacturing powerhouses with the specific demands of Nepal’s public sector.
               </p>
               <p>
-                By collaborating directly with ministerial departments and public agencies, we decode complex technical specifications and match them with top-tier international suppliers, guaranteeing that critical milestones and rigorous quality thresholds are met without delay.
+                As an authorized partner to government bodies and ministerial departments, we manage complex technical tenders from inception to delivery. By enforcing uncompromising quality controls and rigorous regulatory adherence, we ensure that every milestone is executed flawlessly, on time, and within budget.
               </p>
             </div>
           </ScrollReveal>
@@ -44,7 +44,7 @@ export default function GovernmentSupplyPage() {
             </ScrollReveal>
             <ScrollReveal delay={0.2}>
               <p className="font-sans text-[16px] text-text-secondary max-w-2xl">
-                We work closely with government agencies to interpret technical requirements, align product options with operational needs, and manage supplier coordination throughout the entire e-GP procurement cycle.
+                We operate as an extension of your procurement division. Our methodology integrates deep technical analysis with strategic global sourcing, ensuring absolute compliance with e-GP mandates and delivering mission-critical supplies with uncompromising reliability.
               </p>
             </ScrollReveal>
           </div>
