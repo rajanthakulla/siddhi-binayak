@@ -440,17 +440,18 @@ export default function Home() {
             </div>
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 relative z-10">
             {[
               { step: "01", icon: MessageSquare, title: "Share Requirements", desc: "Submit your specifications, quantities, and delivery timelines through our RFQ form." },
-              { step: "02", icon: Shield, title: "Compliant Sourcing", desc: "We source from verified OEMs ensuring all products meet required standards." },
-              { step: "03", icon: FileText, title: "Receive Tailored Quote", desc: "Get a detailed quotation with pricing, certifications, and delivery schedules." },
-              { step: "04", icon: Truck, title: "Delivery & Support", desc: "Scheduled delivery with complete documentation and after-sales support." },
+              { step: "02", icon: Search, title: "Check Availability", desc: "We evaluate the compatibility and availability of the required products across our network." },
+              { step: "03", icon: FileText, title: "Submit Quotation", desc: "Provide a detailed product catalogue, necessary certifications, and a tailored quotation." },
+              { step: "04", icon: Shield, title: "Compliant Sourcing", desc: "We source from verified OEMs ensuring all products meet required standards." },
+              { step: "05", icon: Truck, title: "Delivery & Support", desc: "Scheduled delivery with complete documentation and after-sales support." },
             ].map((item, i) => (
               <ScrollReveal key={i} delay={0.1 * i} className="h-full">
                 <div className="relative group cursor-pointer h-full">
                   {/* Connecting Line (Desktop Only) */}
-                  {i < 3 && (
+                  {i < 4 && (
                     <div className="hidden lg:block absolute top-[4.5rem] -right-8 w-8 h-[2px] bg-[#E5E5E5] group-hover:bg-[#FFD5C2] transition-colors duration-300 z-0" />
                   )}
                   
