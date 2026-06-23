@@ -106,9 +106,9 @@ export default function CoveragePage() {
                     <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-accent-primary mb-2 shrink-0">
                       <ShieldCheck className="w-6 h-6" />
                     </div>
-                    <h4 className="font-sans font-medium text-[18px] text-white">Customs Clearance</h4>
+                    <h4 className="font-sans font-medium text-[18px] text-white">Customs and Delivery</h4>
                     <p className="font-sans text-[15px] text-gray-400 leading-relaxed">
-                      Expedited clearing at major border checkpoints and Tribhuvan International Airport (TIA).
+                      Expedited customs clearing and secure last-mile delivery across all 7 provinces.
                     </p>
                   </div>
                 </ScrollReveal>
@@ -118,9 +118,9 @@ export default function CoveragePage() {
                     <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-accent-primary mb-2 shrink-0">
                       <Flag className="w-6 h-6" />
                     </div>
-                    <h4 className="font-sans font-medium text-[18px] text-white">PPMO Compliance</h4>
+                    <h4 className="font-sans font-medium text-[18px] text-white">Documentation Compliance</h4>
                     <p className="font-sans text-[15px] text-gray-400 leading-relaxed">
-                      Strict adherence to government regulations and public procurement guidelines.
+                      Strict adherence to government regulations, trade laws, and public procurement guidelines.
                     </p>
                   </div>
                 </ScrollReveal>
