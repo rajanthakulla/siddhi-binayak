@@ -49,7 +49,7 @@ const SERVICES = [
   {
     title: "Compliance & Documentation",
     icon: FileCheck2,
-    img: "/images/service_compliance_1781206683127.png",
+    img: "/images/service_compliance_new.jpg",
     desc: "Complete trade documentation, certifications, and regulatory approvals for government and institutional procurement.",
     sub: ["ISO/CE Certification Handling", "Tax & Duty Clearance", "Audit-Ready Documentation", "Trade Approvals"],
     clients: "Government Contractors, B2B Importers, NGOs"
