@@ -20,8 +20,8 @@ export default function AboutPage() {
             GET TO KNOW US
           </Badge>
           <h1 className="font-sans font-medium text-5xl md:text-7xl leading-[1.05] tracking-tight text-text-primary">
-            Nepal&apos;s leading supply partner <br />
-            <span className="text-accent-primary">since 2012.</span>
+            Nepal&apos;s leading supply <br />
+            partner <span className="text-accent-primary">since 2012.</span>
           </h1>
           <p className="font-sans text-[18px] text-text-secondary leading-relaxed max-w-2xl mt-4">
             Siddhi Binayak Overseas Pvt. Ltd. is a Nepal-based general trading company, registered in Lalitpur, specializing in the procurement and supply of high-quality products and integrated solutions for government institutions, defense organizations, educational institutions, healthcare providers, and private enterprises across Nepal.
