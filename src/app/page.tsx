@@ -342,7 +342,7 @@ export default function Home() {
               icon: PackageSearch, 
               title: "Product Sourcing", 
               desc: "Strategic sourcing from authorized OEMs and manufacturers, ensuring quality assurance, competitive pricing, and consistent supply.",
-              link: "/products"
+              link: "/contact"
             },
             { 
               icon: Truck, 
@@ -556,15 +556,6 @@ export default function Home() {
               </div>
             </ScrollReveal>
           ))}
-        </div>
-
-        <div className="container mt-12 flex justify-center">
-          <Link href="/products">
-            <Button size="lg" className="h-14 px-8 text-[15px] font-medium rounded-full bg-accent-primary hover:bg-accent-secondary text-white shadow-[0_8px_20px_rgb(255,107,53,0.3)] hover:shadow-[0_8px_25px_rgb(255,107,53,0.4)] transition-all duration-300 transform hover:-translate-y-1">
-              Learn More About Our Products
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
-          </Link>
         </div>
       </section>
 

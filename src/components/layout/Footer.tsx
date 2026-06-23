@@ -35,7 +35,6 @@ export const Footer = () => {
                 {[
                   { name: 'About', href: '/about' },
                   { name: 'Services', href: '/services' },
-                  { name: 'Products', href: '/products' },
                   { name: 'Coverage', href: '/coverage' }
                 ].map((item) => (
                   <li key={item.name}>
