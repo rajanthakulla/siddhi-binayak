@@ -524,10 +524,10 @@ export default function Home() {
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
               {[
-                { title: "Defense & National Security", desc: "Equipping Nepal Army and Armed Police with tactical resources.", icon: Shield },
-                { title: "Disaster Management", desc: "Rapid-deployment provisions for rescue operations.", icon: Globe2 },
-                { title: "Infrastructure & Power", desc: "Core equipment for state-sponsored construction.", icon: Building },
-                { title: "Health & Civil Aviation", desc: "Advanced medical and civil aviation technologies.", icon: Truck }
+                { title: "Defense & National Security", desc: "Equipping the Nepal Army, Armed Police Force, and national defense agencies with top-tier tactical resources, specialized equipment, and secure systems.", icon: Shield },
+                { title: "Disaster Management", desc: "Delivering rapid-deployment provisions, emergency rescue tools, and critical relief supplies to support swift and effective disaster response operations.", icon: Globe2 },
+                { title: "Infrastructure & Power", desc: "Supplying core equipment, heavy machinery, and vital materials for large-scale state-sponsored construction and sustainable power development projects.", icon: Building },
+                { title: "Health & Civil Aviation", desc: "Providing advanced medical devices, critical healthcare supplies, and state-of-the-art civil aviation technologies to ensure safety and operational excellence.", icon: Truck }
               ].map((sector, i) => (
                 <div key={i} className="flex flex-col gap-2 p-4 bg-[#FAFAFA] rounded-2xl border border-surface-border hover:border-[#FFD5C2] transition-colors group">
                   <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#FFF6F3] to-[#FFE8DE] text-accent-primary flex items-center justify-center border border-[#FFD5C2]/50 group-hover:bg-accent-primary group-hover:text-white transition-colors duration-300">
@@ -548,7 +548,7 @@ export default function Home() {
               <div>
                 <h4 className="font-sans font-semibold text-[15px] text-accent-primary mb-0.5">Regulatory Integrity</h4>
                 <p className="font-sans text-[13px] text-accent-primary/80 leading-relaxed">
-                  Strict adherence to Public Procurement Monitoring Office (PPMO) mandates with exhaustive compliance documentation.
+                  Strict adherence to Public Procurement Monitoring Office (PPMO) mandates, ensuring complete transparency, ethical sourcing, and exhaustive compliance documentation for every tender.
                 </p>
               </div>
             </div>
