@@ -329,6 +329,12 @@ export default function Home() {
               link: "/services#general-trading"
             },
             { 
+              icon: FileCheck2, 
+              title: "Compliance & Documentation", 
+              desc: "Complete trade documentation, certifications, and regulatory approvals for government and institutional procurement.",
+              link: "/faqs"
+            },
+            { 
               icon: ArrowLeftRight, 
               title: "Import & Export", 
               desc: "End-to-end import and export operations in Nepal, covering sourcing, customs coordination, regulatory compliance, and cross-border trade facilitation.",
@@ -340,24 +346,6 @@ export default function Home() {
               desc: "Specialized supply solutions for government departments, defense, and public institutions, aligned with tender requirements and compliance standards.",
               link: "/government-supply"
             },
-            { 
-              icon: PackageSearch, 
-              title: "Product Sourcing", 
-              desc: "Strategic sourcing from authorized OEMs and manufacturers, ensuring quality assurance, competitive pricing, and consistent supply.",
-              link: "/contact"
-            },
-            { 
-              icon: Truck, 
-              title: "Logistics & Distribution", 
-              desc: "Efficient logistics management including freight coordination, warehousing, and last-mile distribution with reliable delivery timelines.",
-              link: "/coverage"
-            },
-            { 
-              icon: FileCheck2, 
-              title: "Compliance & Documentation", 
-              desc: "Complete trade documentation, certifications, and regulatory approvals for government and institutional procurement.",
-              link: "/faqs"
-            },
           ].map((srv, idx) => (
             <motion.div 
               key={idx}
@@ -366,7 +354,7 @@ export default function Home() {
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1, duration: 0.4 }}
             >
-              <Card className="h-full flex flex-col group border-surface-border">
+              <Card className="h-full flex flex-col group border-surface-border p-6 md:p-8">
                 <div className="w-12 h-12 rounded-full border border-surface-border flex items-center justify-center text-accent-primary mb-6">
                   <srv.icon className="w-5 h-5" />
                 </div>
@@ -381,6 +369,33 @@ export default function Home() {
               </Card>
             </motion.div>
           ))}
+        </div>
+
+        <ScrollReveal delay={0.1}>
+          <div className="mt-32 flex flex-col items-center text-center mb-12">
+            <h2 className="font-sans font-medium tracking-tight text-4xl md:text-5xl leading-tight text-text-primary mb-6">
+              How we <span className="text-accent-primary">work</span>
+            </h2>
+          </div>
+        </ScrollReveal>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1, duration: 0.4 }}
+          >
+            <Card className="h-full flex flex-col group border-surface-border p-6 md:p-8 bg-[#FAFAFA] hover:border-[#FFD5C2] transition-colors">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#FFF6F3] to-[#FFE8DE] border border-[#FFD5C2]/50 flex items-center justify-center text-accent-primary mb-6 group-hover:bg-accent-primary group-hover:text-white transition-colors duration-300">
+                <PackageSearch className="w-5 h-5" />
+              </div>
+              <h3 className="font-sans font-medium text-xl text-text-primary mb-3">Product Sourcing</h3>
+              <p className="font-sans text-[16px] text-text-secondary leading-relaxed">
+                Strategic sourcing from authorized OEMs and manufacturers, ensuring quality assurance, competitive pricing, and consistent supply.
+              </p>
+            </Card>
+          </motion.div>
         </div>
       </section>
 
