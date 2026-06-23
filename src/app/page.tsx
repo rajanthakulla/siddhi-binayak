@@ -310,7 +310,6 @@ export default function Home() {
       <section className="pt-16 pb-32 container overflow-hidden">
         <ScrollReveal delay={0.1}>
           <div className="flex flex-col items-center text-center mb-20">
-            <Badge variant="default" className="mb-6">What We Do</Badge>
             <h2 className="font-sans font-medium tracking-tight text-4xl md:text-5xl leading-tight text-text-primary max-w-3xl mb-6">
               Our Core <span className="text-accent-primary">Services Include</span>
             </h2>
@@ -326,25 +325,19 @@ export default function Home() {
               icon: Globe2, 
               title: "General Trading", 
               desc: "Multi-sector trading of certified products across industrial, safety, infrastructure, healthcare, and consumer categories through verified global suppliers.",
-              link: "/services#general-trading"
-            },
-            { 
-              icon: FileCheck2, 
-              title: "Compliance & Documentation", 
-              desc: "Complete trade documentation, certifications, and regulatory approvals for government and institutional procurement.",
-              link: "/faqs"
+              link: "/services"
             },
             { 
               icon: ArrowLeftRight, 
               title: "Import & Export", 
               desc: "End-to-end import and export operations in Nepal, covering sourcing, customs coordination, regulatory compliance, and cross-border trade facilitation.",
-              link: "/services#import-export"
+              link: "/services"
             },
             { 
               icon: Shield, 
               title: "Government Supply", 
               desc: "Specialized supply solutions for government departments, defense, and public institutions, aligned with tender requirements and compliance standards.",
-              link: "/government-supply"
+              link: "/services"
             },
           ].map((srv, idx) => (
             <motion.div 
@@ -373,29 +366,57 @@ export default function Home() {
 
         <ScrollReveal delay={0.1}>
           <div className="mt-32 flex flex-col items-center text-center mb-12">
+            <Badge variant="default" className="mb-6">What We Do</Badge>
             <h2 className="font-sans font-medium tracking-tight text-4xl md:text-5xl leading-tight text-text-primary mb-6">
-              How we <span className="text-accent-primary">work</span>
+              What we <span className="text-accent-primary">do ?</span>
             </h2>
           </div>
         </ScrollReveal>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1, duration: 0.4 }}
-          >
-            <Card className="h-full flex flex-col group border-surface-border p-6 md:p-8 bg-[#FAFAFA] hover:border-[#FFD5C2] transition-colors">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#FFF6F3] to-[#FFE8DE] border border-[#FFD5C2]/50 flex items-center justify-center text-accent-primary mb-6 group-hover:bg-accent-primary group-hover:text-white transition-colors duration-300">
-                <PackageSearch className="w-5 h-5" />
-              </div>
-              <h3 className="font-sans font-medium text-xl text-text-primary mb-3">Product Sourcing</h3>
-              <p className="font-sans text-[16px] text-text-secondary leading-relaxed">
-                Strategic sourcing from authorized OEMs and manufacturers, ensuring quality assurance, competitive pricing, and consistent supply.
-              </p>
-            </Card>
-          </motion.div>
+          {[
+            {
+              icon: PackageSearch,
+              title: "Product Sourcing",
+              desc: "Strategic sourcing from authorized OEMs and manufacturers, ensuring quality assurance, competitive pricing, and consistent supply.",
+              link: "/services"
+            },
+            {
+              icon: Truck,
+              title: "Logistics and Distribution",
+              desc: "Efficient logistics management including freight coordination, warehousing, and last-mile distribution with reliable delivery timelines.",
+              link: "/services"
+            },
+            {
+              icon: FileCheck2,
+              title: "Compliance & Documentation",
+              desc: "Complete trade documentation, certifications, and regulatory approvals for government and institutional procurement.",
+              link: "/services"
+            }
+          ].map((srv, idx) => (
+            <motion.div 
+              key={idx}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: idx * 0.1, duration: 0.4 }}
+            >
+              <Card className="h-full flex flex-col group border-surface-border p-6 md:p-8 bg-[#FAFAFA] hover:border-[#FFD5C2] transition-colors">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#FFF6F3] to-[#FFE8DE] border border-[#FFD5C2]/50 flex items-center justify-center text-accent-primary mb-6 group-hover:bg-accent-primary group-hover:text-white transition-colors duration-300">
+                  <srv.icon className="w-5 h-5" />
+                </div>
+                <h3 className="font-sans font-medium text-xl text-text-primary mb-3">{srv.title}</h3>
+                <p className="font-sans text-[16px] text-text-secondary leading-relaxed mb-6">
+                  {srv.desc}
+                </p>
+                <div className="mt-auto pt-4 border-t border-surface-border">
+                  <Link href={srv.link} className="inline-flex items-center font-sans font-medium text-[15px] text-accent-primary hover:text-[#E04B18] transition-colors pt-4">
+                    Learn More <ArrowRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
+                  </Link>
+                </div>
+              </Card>
+            </motion.div>
+          ))}
         </div>
       </section>
 
