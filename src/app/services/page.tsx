@@ -17,7 +17,7 @@ const SERVICES = [
   {
     title: "Import & Export",
     icon: ArrowLeftRight,
-    img: "/images/service_import_export_1781206632558.png",
+    img: "/images/service_import_export_new.jpg",
     desc: "End-to-end import and export operations in Nepal, covering sourcing, customs coordination, regulatory compliance, and cross-border trade facilitation.",
     sub: ["Customs Clearance", "Regulatory Compliance", "Cross-Border Logistics", "Letter of Credit Handling"],
     clients: "Manufacturing Plants, Distributors, Large Scale Wholesalers"
