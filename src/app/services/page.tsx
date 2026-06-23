@@ -28,7 +28,7 @@ const SERVICES = [
     img: "/images/service_government_1781206646325.png",
     desc: "Specialized supply solutions for government departments, defense, and public institutions, aligned with tender requirements and compliance standards.",
     sub: ["Defense & Security Gear", "Public Health Supplies", "Infrastructure Materials", "Tender-Specific Procurement"],
-    clients: "Nepal Army, Ministry of Health, Department of Roads"
+    clients: "Government of Nepal, Health Care Department, Department of Roads"
   },
   {
     title: "Product Sourcing",
