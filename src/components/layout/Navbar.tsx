@@ -37,7 +37,7 @@ export const Navbar = () => {
       >
         <div className="px-6 md:px-8 h-full flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2 group">
-            <img src="/images/logo.png" alt="Siddhi Binayak Logo" className="h-[40px] md:h-[50px] w-auto object-contain transform group-hover:scale-105 transition-transform duration-300 mix-blend-multiply" />
+            <img src="/images/logo.png" alt="Siddhi Binayak Logo" className="h-[48px] md:h-[60px] w-auto object-contain transform group-hover:scale-105 transition-transform duration-300 mix-blend-multiply" />
           </Link>
 
           {/* Desktop Nav */}
@@ -79,7 +79,7 @@ export const Navbar = () => {
       >
         <div className="px-6 h-[88px] flex items-center justify-between border-b border-surface-border shrink-0">
           <Link href="/" className="flex items-center gap-2 group">
-            <img src="/images/logo.png" alt="Siddhi Binayak Logo" className="h-[40px] md:h-[50px] w-auto object-contain transform group-hover:scale-105 transition-transform duration-300 mix-blend-multiply" />
+            <img src="/images/logo.png" alt="Siddhi Binayak Logo" className="h-[48px] md:h-[60px] w-auto object-contain transform group-hover:scale-105 transition-transform duration-300 mix-blend-multiply" />
           </Link>
           <button
             className="text-text-primary p-2 rounded-full hover:bg-bg-secondary"
