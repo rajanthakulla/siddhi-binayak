@@ -51,7 +51,7 @@ export default function WhyUsPage() {
                   <h3 className="font-sans font-medium text-3xl text-text-primary tracking-tight">Our Mission</h3>
                 </div>
                 <p className="font-sans text-[16px] text-text-secondary leading-relaxed">
-                  To empower Nepal&apos;s public and private sectors by delivering an uncompromised, transparent, and highly efficient global supply chain. We aim to eliminate procurement bottlenecks so our clients can focus on growth and governance.
+                  To architect and execute fault-tolerant supply chains that empower Nepal&apos;s state institutions and enterprise sectors. We eliminate logistical friction, ensuring uninterrupted access to mission-critical resources for national development.
                 </p>
               </div>
             </ScrollReveal>
@@ -65,7 +65,7 @@ export default function WhyUsPage() {
                   <h3 className="font-sans font-medium text-3xl text-text-primary tracking-tight">Our Vision</h3>
                 </div>
                 <p className="font-sans text-[16px] text-text-secondary leading-relaxed">
-                  To be recognized as the absolute gold standard for institutional trading in Nepal—building long-term partnerships through unmatched reliability, financial resilience, and strict adherence to international quality standards.
+                  To stand as the definitive benchmark for institutional procurement in the region, forging unbreakable strategic alliances through absolute transparency, zero-defect execution, and uncompromising ethical standards.
                 </p>
               </div>
             </ScrollReveal>
@@ -82,7 +82,7 @@ export default function WhyUsPage() {
                   <h3 className="font-sans font-medium text-xl text-text-primary">Global Reach, Local Expertise</h3>
                 </div>
                 <p className="font-sans text-text-secondary leading-relaxed text-[15px]">
-                  We combine an extensive international network of certified manufacturers with deep, practical knowledge of Nepal&apos;s customs, taxation, and localized logistics.
+                  We synthesize an elite network of tier-one global manufacturers with granular, on-the-ground mastery of Nepal&apos;s regulatory frameworks, customs clearance protocols, and last-mile logistics.
                 </p>
               </div>
             </ScrollReveal>
@@ -96,7 +96,7 @@ export default function WhyUsPage() {
                   <h3 className="font-sans font-medium text-xl text-text-primary">Zero-Risk Compliance</h3>
                 </div>
                 <p className="font-sans text-text-secondary leading-relaxed text-[15px]">
-                  Our dedicated compliance team ensures every transaction meets stringent GoN regulations and international trade laws, protecting our clients from legal and financial risks.
+                  Our rigorous compliance infrastructure guarantees that every procurement cycle strictly adheres to GoN mandates and international trade laws, entirely insulating our partners from operational and financial liabilities.
                 </p>
               </div>
             </ScrollReveal>
@@ -110,7 +110,7 @@ export default function WhyUsPage() {
                   <h3 className="font-sans font-medium text-xl text-text-primary">Financial Resilience</h3>
                 </div>
                 <p className="font-sans text-text-secondary leading-relaxed text-[15px]">
-                  We possess the financial backing and framework to execute massive bulk procurements and complex framework agreements without cash flow interruptions.
+                  Backed by robust institutional capital and sophisticated financial structuring, we possess the capacity to underwrite and execute massive, multi-year framework agreements without fiscal interruption.
                 </p>
               </div>
             </ScrollReveal>
@@ -127,7 +127,7 @@ export default function WhyUsPage() {
                 Our Core Strengths
               </h2>
               <p className="font-sans text-[16px] text-text-secondary leading-relaxed">
-                Our success is built on direct partnerships with verified manufacturers, transparent sourcing, and delivery processes that are always audit-ready. From the initial order to final handover, we ensure every step is smooth and fully documented.
+                Our operational superiority is anchored by direct strategic partnerships with vetted global manufacturers, transparent procurement architectures, and flawlessly documented delivery protocols. From initial feasibility analysis to final on-site handover, we guarantee frictionless, audit-ready execution at every phase.
               </p>
               <ul className="flex flex-col gap-4 mt-4">
                 {[
@@ -154,9 +154,9 @@ export default function WhyUsPage() {
           
           <div className="grid grid-cols-2 gap-4">
             {[
-              { val: "500+", label: "Gov Tenders Fulfilled" },
-              { val: "12+", label: "Years of Experience" },
-              { val: "50+", label: "Product Categories" },
+              { val: "40+", label: "Govt Tenders Fulfilled" },
+              { val: "3+", label: "Years of Experience" },
+              { val: "50+", label: "Product Catalogues" },
               { val: "100%", label: "On-Time Delivery" }
             ].map((stat, i) => (
               <ScrollReveal key={i} delay={0.1 * i}>
