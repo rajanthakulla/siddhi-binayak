@@ -520,7 +520,12 @@ export default function Home() {
 
           <ScrollReveal delay={0.3}>
             <div className="flex flex-col gap-6 bg-white p-6 md:p-8 rounded-3xl border border-surface-border shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-              <h3 className="font-sans font-semibold text-2xl text-text-primary">Strategic Sectors</h3>
+              <div className="flex flex-col gap-2">
+                <h3 className="font-sans font-semibold text-2xl text-text-primary">Strategic Sectors</h3>
+                <p className="font-sans text-[15px] text-text-secondary leading-relaxed">
+                  We partner with government agencies, public institutions, and industrial organizations to deliver reliable procurement and supply chain solutions across critical sectors where precision, compliance, and operational readiness are essential.
+                </p>
+              </div>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
               {[
