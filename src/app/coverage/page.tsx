@@ -52,18 +52,18 @@ export default function CoveragePage() {
           {[
             {
               icon: <Globe2 className="w-7 h-7" />,
-              title: "Global Sourcing to Local Delivery",
+              title: "Global Sourcing",
               desc: "We import high-value goods, equipment, and mission-critical materials from international manufacturing hubs, ensuring secure and seamless delivery to any location across Nepal."
             },
             {
               icon: <Building className="w-7 h-7" />,
-              title: "Kathmandu Headquarters",
-              desc: "Serving as our strategic nerve center and the primary point of import and export, our Kathmandu HQ orchestrates all customs clearance, compliance, and nationwide distribution operations."
+              title: "Global Supply",
+              desc: "We facilitate the strategic export of premium Nepal-sourced products and materials, managing the entire outbound supply chain to deliver them securely to international markets."
             },
             {
               icon: <Truck className="w-7 h-7" />,
-              title: "Local Sourcing to Global Delivery",
-              desc: "We facilitate the strategic export of premium Nepal-sourced products and materials, managing the entire outbound supply chain to deliver them securely to international markets."
+              title: "Logistics and Documentation",
+              desc: "Operating from our Kathmandu nerve center, we orchestrate all customs clearance, regulatory compliance, documentation, and nationwide or global distribution operations."
             }
           ].map((pillar, i) => (
             <ScrollReveal key={i} delay={0.1 * i} className="h-full">
