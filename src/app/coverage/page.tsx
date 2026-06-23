@@ -23,14 +23,14 @@ export default function CoveragePage() {
             <Badge variant="default" className="w-fit">OUR NETWORK</Badge>
           </ScrollReveal>
           <ScrollReveal delay={0.15}>
-            <h1 className="font-sans font-medium text-5xl md:text-6xl text-text-primary tracking-tight leading-[1.1]">
-              Global Sourcing.<br/>
-              <span className="text-accent-primary">Local Delivery.</span>
+            <h1 className="font-sans font-medium text-4xl md:text-5xl lg:text-6xl text-text-primary tracking-tight leading-[1.1]">
+              Global Sourcing to Local Delivery.<br/>
+              <span className="text-accent-primary">Local Sourcing to Global Delivery.</span>
             </h1>
           </ScrollReveal>
           <ScrollReveal delay={0.25}>
             <p className="font-sans text-[18px] md:text-[20px] text-text-secondary leading-relaxed max-w-2xl mt-2">
-              From our headquarters in Kathmandu, our logistics and procurement network spans across all 7 provinces of Nepal and connects directly with manufacturing hubs globally.
+              Anchored by our Kathmandu headquarters—the definitive first point of import and export—our two-way trade network spans all 7 provinces of Nepal and connects seamlessly with international markets.
             </p>
           </ScrollReveal>
           <ScrollReveal delay={0.35}>
@@ -52,18 +52,18 @@ export default function CoveragePage() {
           {[
             {
               icon: <Globe2 className="w-7 h-7" />,
-              title: "Global Sourcing",
-              desc: "We maintain active vendor networks and strategic partnerships across Europe, North America, and key Asian manufacturing hubs to ensure we can source any requirement directly from verified OEMs."
+              title: "Global Sourcing to Local Delivery",
+              desc: "We import high-value goods, equipment, and mission-critical materials from international manufacturing hubs, ensuring secure and seamless delivery to any location across Nepal."
             },
             {
-              icon: <MapPin className="w-7 h-7" />,
-              title: "Pan-Nepal Network",
-              desc: "Headquartered in Kathmandu, we possess the logistical capability to deliver vital supplies to all 77 districts of Nepal, including remote areas, high-altitude outposts, and major urban centers."
+              icon: <Building className="w-7 h-7" />,
+              title: "Kathmandu Headquarters",
+              desc: "Serving as our strategic nerve center and the primary point of import and export, our Kathmandu HQ orchestrates all customs clearance, compliance, and nationwide distribution operations."
             },
             {
               icon: <Truck className="w-7 h-7" />,
-              title: "Last-Mile Logistics",
-              desc: "We partner with premier freight and local transport agencies to ensure that your supplies clear customs efficiently and reach your specific warehouse or facility perfectly on time."
+              title: "Local Sourcing to Global Delivery",
+              desc: "We facilitate the strategic export of premium Nepal-sourced products and materials, managing the entire outbound supply chain to deliver them securely to international markets."
             }
           ].map((pillar, i) => (
             <ScrollReveal key={i} delay={0.1 * i} className="h-full">
@@ -92,10 +92,10 @@ export default function CoveragePage() {
                 <div>
                   <Badge variant="default" className="w-fit mb-4 bg-white/10 text-white hover:bg-white/20 border-none">SUPPLY CHAIN CAPABILITIES</Badge>
                   <h2 className="font-sans font-medium tracking-tight text-4xl md:text-5xl text-white leading-tight mb-6">
-                    End-to-End <br/><span className="text-accent-primary">Import & Distribution</span>
+                    End-to-End <br/><span className="text-accent-primary">Import & Export Management</span>
                   </h2>
                   <p className="font-sans text-[18px] text-gray-400 leading-relaxed">
-                    Importing specialized equipment requires deep knowledge of international trade laws, transit routes, and local taxation. We handle the entire lifecycle so our clients don't have to worry about delays or compliance failures.
+                    Executing cross-border trade requires deep knowledge of international laws, complex transit routes, and local taxation. We handle the entire two-way lifecycle, ensuring zero delays and absolute compliance for both inbound and outbound shipments.
                   </p>
                 </div>
               </ScrollReveal>
