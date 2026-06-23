@@ -41,7 +41,7 @@ const SERVICES = [
   {
     title: "Logistics & Distribution",
     icon: Truck,
-    img: "/images/service_logistics_1781206671295.png",
+    img: "/images/service_logistics_new.jpg",
     desc: "Efficient logistics management including freight coordination, warehousing, and last-mile distribution with reliable delivery timelines.",
     sub: ["Freight Forwarding", "Warehousing Solutions", "Pan-Nepal Distribution", "Cold Chain Logistics"],
     clients: "Wholesalers, E-commerce Platforms, Regional Distributors"
