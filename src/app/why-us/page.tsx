@@ -27,10 +27,10 @@ export default function WhyUsPage() {
           <ScrollReveal delay={0.25}>
             <div className="flex flex-col gap-4 font-sans text-[18px] text-text-secondary leading-relaxed max-w-3xl">
               <p>
-                Siddhi Binayak Overseas Pvt. Ltd. Nepal is a premier Nepal-based trading and import/export company. We specialize in supplying the public sector, sourcing for B2B operations, and delivering multi-sector trade solutions. 
+                Siddhi Binayak Overseas Pvt. Ltd. Nepal stands at the forefront of global procurement and institutional supply. We engineer resilient, large-scale supply chains that empower Nepal's public sector and enterprise B2B operations with uncompromising efficiency.
               </p>
               <p>
-                Driven by a commitment to quality, full compliance, and on-time delivery, we provide government agencies, public institutions, and businesses across Nepal with supply chains they can trust.
+                By enforcing rigorous quality thresholds, absolute regulatory compliance, and precise delivery schedules, we serve as the critical bridge connecting world-class manufacturers to Nepal’s most demanding infrastructure, defense, and public health initiatives.
               </p>
             </div>
           </ScrollReveal>
