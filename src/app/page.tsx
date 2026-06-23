@@ -238,69 +238,76 @@ export default function Home() {
 
       {/* SECTION 3: INTRODUCTION */}
       <section className="pt-24 pb-12 bg-white overflow-hidden">
-        <div className="container grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <ScrollReveal delay={0.1}>
-            <div className="flex flex-col gap-6">
-              <h2 className="font-sans font-medium text-4xl md:text-5xl leading-[1.1] tracking-tight text-text-primary mb-6">
-                Welcome to <span className="text-accent-primary">Siddhi Binayak Overseas Pvt. Ltd. Nepal.</span>
-              </h2>
-              <div className="flex flex-col gap-4 font-sans text-[18px] text-text-secondary leading-relaxed">
-                <p>
-                  Siddhi Binayak Overseas Pvt. Ltd. Nepal is a premier Nepal-based trading and import/export company. We specialize in supplying the public sector, sourcing for B2B operations, and delivering multi-sector trade solutions. Driven by a commitment to quality, full compliance, and on-time delivery, we provide government agencies, public institutions, and businesses across Nepal with supply chains they can trust.
-                </p>
-                <p>
-                  Our success is built on direct partnerships with verified manufacturers, transparent sourcing, and delivery processes that are always audit-ready. From the initial order to final handover, we ensure every step is smooth and fully documented.
-                </p>
-              </div>
-              <div className="mt-4">
-                <Button variant="primary" className="bg-[#111111] hover:bg-accent-primary hover:border-accent-primary text-white rounded-full px-6 transition-colors duration-300" asChild>
-                  <Link href="/services">Learn More About Our Services <ArrowRight className="w-4 h-4 ml-2"/></Link>
-                </Button>
-              </div>
-            </div>
+        <div className="container flex flex-col items-center">
+          <ScrollReveal delay={0.1} className="w-full flex flex-col items-center text-center mb-16">
+            <h2 className="font-sans font-medium text-4xl md:text-5xl leading-[1.1] tracking-tight text-text-primary max-w-4xl">
+              Welcome to <span className="text-accent-primary">Siddhi Binayak Overseas Pvt. Ltd. Nepal.</span>
+            </h2>
           </ScrollReveal>
           
-          <ScrollReveal delay={0.3}>
-            <div className="flex gap-4">
-              <div className="w-12 h-12 rounded-full bg-[#FAFAFA] flex items-center justify-center border border-surface-border text-accent-primary shrink-0">
-                <Building className="w-5 h-5" />
+          <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <ScrollReveal delay={0.2}>
+              <div className="flex flex-col gap-6">
+                <div className="flex flex-col gap-4 font-sans text-[18px] text-text-secondary leading-relaxed">
+                  <p>
+                    Siddhi Binayak Overseas Pvt. Ltd. Nepal is a premier Nepal-based trading and import/export company. We specialize in supplying the public sector, sourcing for B2B operations, and delivering multi-sector trade solutions. Driven by a commitment to quality, full compliance, and on-time delivery, we provide government agencies, public institutions, and businesses across Nepal with supply chains they can trust.
+                  </p>
+                  <p>
+                    Our success is built on direct partnerships with verified manufacturers, transparent sourcing, and delivery processes that are always audit-ready. From the initial order to final handover, we ensure every step is smooth and fully documented.
+                  </p>
+                </div>
+                <div className="mt-4">
+                  <Button variant="primary" className="bg-[#111111] hover:bg-accent-primary hover:border-accent-primary text-white rounded-full px-6 transition-colors duration-300" asChild>
+                    <Link href="/services">Learn More About Our Services <ArrowRight className="w-4 h-4 ml-2"/></Link>
+                  </Button>
+                </div>
               </div>
-              <div className="flex flex-col gap-1">
-                <h3 className="font-sans font-medium text-xl text-text-primary">Public Sector &amp; Institutional Expertise</h3>
-                <p className="font-sans text-text-secondary leading-relaxed">We specialize in serving government bodies, defense sectors, and large institutions.</p>
-              </div>
-            </div>
+            </ScrollReveal>
+            
+            <ScrollReveal delay={0.3}>
+              <div className="flex flex-col gap-8">
+                <div className="flex gap-4">
+                  <div className="w-12 h-12 rounded-full bg-[#FAFAFA] flex items-center justify-center border border-surface-border text-accent-primary shrink-0">
+                    <Building className="w-5 h-5" />
+                  </div>
+                  <div className="flex flex-col gap-1">
+                    <h3 className="font-sans font-medium text-xl text-text-primary">Public Sector &amp; Institutional Expertise</h3>
+                    <p className="font-sans text-text-secondary leading-relaxed">We specialize in serving government bodies, defense sectors, and large institutions.</p>
+                  </div>
+                </div>
 
-            <div className="flex gap-4">
-              <div className="w-12 h-12 rounded-full bg-[#FAFAFA] flex items-center justify-center border border-surface-border text-accent-primary shrink-0">
-                <Shield className="w-5 h-5" />
-              </div>
-              <div className="flex flex-col gap-1">
-                <h3 className="font-sans font-medium text-xl text-text-primary">Certified &amp; Quality-Assured Supplies</h3>
-                <p className="font-sans text-text-secondary leading-relaxed">Every product we import meets strict international standards and local certifications.</p>
-              </div>
-            </div>
+                <div className="flex gap-4">
+                  <div className="w-12 h-12 rounded-full bg-[#FAFAFA] flex items-center justify-center border border-surface-border text-accent-primary shrink-0">
+                    <Shield className="w-5 h-5" />
+                  </div>
+                  <div className="flex flex-col gap-1">
+                    <h3 className="font-sans font-medium text-xl text-text-primary">Certified &amp; Quality-Assured Supplies</h3>
+                    <p className="font-sans text-text-secondary leading-relaxed">Every product we import meets strict international standards and local certifications.</p>
+                  </div>
+                </div>
 
-            <div className="flex gap-4">
-              <div className="w-12 h-12 rounded-full bg-[#FAFAFA] flex items-center justify-center border border-surface-border text-accent-primary shrink-0">
-                <Globe2 className="w-5 h-5" />
-              </div>
-              <div className="flex flex-col gap-1">
-                <h3 className="font-sans font-medium text-xl text-text-primary">Direct Manufacturer Alliances</h3>
-                <p className="font-sans text-text-secondary leading-relaxed">We source directly from original equipment manufacturers (OEMs) worldwide to guarantee authenticity.</p>
-              </div>
-            </div>
+                <div className="flex gap-4">
+                  <div className="w-12 h-12 rounded-full bg-[#FAFAFA] flex items-center justify-center border border-surface-border text-accent-primary shrink-0">
+                    <Globe2 className="w-5 h-5" />
+                  </div>
+                  <div className="flex flex-col gap-1">
+                    <h3 className="font-sans font-medium text-xl text-text-primary">Direct Manufacturer Alliances</h3>
+                    <p className="font-sans text-text-secondary leading-relaxed">We source directly from original equipment manufacturers (OEMs) worldwide to guarantee authenticity.</p>
+                  </div>
+                </div>
 
-            <div className="flex gap-4">
-              <div className="w-12 h-12 rounded-full bg-[#FAFAFA] flex items-center justify-center border border-surface-border text-accent-primary shrink-0">
-                <FileCheck2 className="w-5 h-5" />
+                <div className="flex gap-4">
+                  <div className="w-12 h-12 rounded-full bg-[#FAFAFA] flex items-center justify-center border border-surface-border text-accent-primary shrink-0">
+                    <FileCheck2 className="w-5 h-5" />
+                  </div>
+                  <div className="flex flex-col gap-1">
+                    <h3 className="font-sans font-medium text-xl text-text-primary">Complete Documentation &amp; Timely Delivery</h3>
+                    <p className="font-sans text-text-secondary leading-relaxed">We handle end-to-end customs clearance and ensure your projects are delivered strictly on time.</p>
+                  </div>
+                </div>
               </div>
-              <div className="flex flex-col gap-1">
-                <h3 className="font-sans font-medium text-xl text-text-primary">Complete Documentation &amp; Timely Delivery</h3>
-                <p className="font-sans text-text-secondary leading-relaxed">We handle end-to-end customs clearance and ensure your projects are delivered strictly on time.</p>
-              </div>
-            </div>
-          </ScrollReveal>
+            </ScrollReveal>
+          </div>
         </div>
       </section>
 
