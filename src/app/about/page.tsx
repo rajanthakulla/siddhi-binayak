@@ -24,7 +24,7 @@ export default function AboutPage() {
             <span className="text-accent-primary">since 2012.</span>
           </h1>
           <p className="font-sans text-[18px] text-text-secondary leading-relaxed max-w-2xl mt-4">
-            Siddhi Binayak Overseas Pvt. Ltd. Nepal is a Lalitpur-registered general trading company serving Nepal&apos;s government institutions, defense agencies, educational bodies, healthcare facilities, and private enterprises.
+            Siddhi Binayak Overseas Pvt. Ltd. is a Nepal-based general trading company, registered in Lalitpur, specializing in the procurement and supply of high-quality products and integrated solutions for government institutions, defense organizations, educational institutions, healthcare providers, and private enterprises across Nepal.
           </p>
         </div>
         

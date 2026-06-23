@@ -250,7 +250,7 @@ export default function Home() {
               <div className="flex flex-col gap-6">
                 <div className="flex flex-col gap-4 font-sans text-[17px] text-text-secondary leading-relaxed">
                   <p>
-                    Siddhi Binayak Overseas Pvt. Ltd. Nepal stands at the forefront of global procurement and institutional supply. We engineer resilient, large-scale supply chains that empower Nepal's public sector and enterprise B2B operations with uncompromising efficiency. By enforcing rigorous quality thresholds, absolute regulatory compliance, and precise delivery schedules, we serve as the critical bridge connecting world-class manufacturers to Nepal’s most demanding infrastructure and public health initiatives.
+                    Siddhi Binayak Overseas Pvt. Ltd. is a Nepal-based general trading company, registered in Lalitpur, specializing in the procurement and supply of high-quality products and integrated solutions for government institutions, defense organizations, educational institutions, healthcare providers, and private enterprises across Nepal.
                   </p>
                   <p>
                     Our execution model is anchored by direct partnerships with verified international manufacturers and transparent, audit-ready delivery processes. From the initial feasibility analysis to final handover, we guarantee flawless coordination and comprehensive documentation. We operate as a strategic extension of your procurement division, delivering tailored, high-performance solutions that drive operational excellence.
