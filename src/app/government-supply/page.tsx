@@ -52,14 +52,14 @@ export default function GovernmentSupplyPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
+                icon: <Building className="w-5 h-5" />,
+                title: "PPMO Compliance",
+                desc: "Fully registered and compliant with the Public Procurement Monitoring Office (PPMO) guidelines and e-GP platform."
+              },
+              {
                 icon: <Search className="w-5 h-5" />,
                 title: "Pre-Bid Feasibility",
                 desc: "In-depth pre-bid requirement analysis and sourcing feasibility to ensure realistic timelines and budgeting for public projects."
-              },
-              {
-                icon: <Users className="w-5 h-5" />,
-                title: "Supplier Coordination",
-                desc: "Seamless multi-supplier coordination for large or mixed procurements, handling negotiations and logistics under one roof."
               },
               {
                 icon: <Target className="w-5 h-5" />,
@@ -67,14 +67,14 @@ export default function GovernmentSupplyPage() {
                 desc: "Rigorous specification alignment and commercial evaluation support to meet exact GoN tender requirements."
               },
               {
+                icon: <Users className="w-5 h-5" />,
+                title: "Supplier Coordination",
+                desc: "Seamless multi-supplier coordination for large or mixed procurements, handling negotiations and logistics under one roof."
+              },
+              {
                 icon: <Activity className="w-5 h-5" />,
                 title: "Execution Tracking",
                 desc: "Structured execution tracking and progress reporting. Schedule reliability remains central to our execution model."
-              },
-              {
-                icon: <Building className="w-5 h-5" />,
-                title: "PPMO Compliance",
-                desc: "Fully registered and compliant with the Public Procurement Monitoring Office (PPMO) guidelines and e-GP platform."
               },
               {
                 icon: <FileCheck2 className="w-5 h-5" />,
