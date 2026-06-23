@@ -10,7 +10,7 @@ import { Marquee } from "@/components/ui/Marquee";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { HeroAbstractUI } from "@/components/ui/HeroAbstractUI";
 import { PartnersMarquee } from "@/components/ui/PartnersMarquee";
-import { CheckCircle2, Shield, Target, Clock, ArrowRight, Building, Globe2, FileCheck2, ArrowLeftRight, Truck, PackageSearch, MessageSquare, FileText, LifeBuoy, Wrench, Cpu, Plane, Zap, Hammer, ShoppingCart, ChevronDown, Hash, Square, Sun, Command, Asterisk, Snowflake } from "lucide-react";
+import { CheckCircle2, Shield, Target, Clock, ArrowRight, Building, Globe2, FileCheck2, ArrowLeftRight, Truck, PackageSearch, MessageSquare, FileText, LifeBuoy, Wrench, Cpu, Plane, Zap, Hammer, ShoppingCart, ChevronDown, Hash, Square, Sun, Command, Asterisk, Snowflake, Search } from "lucide-react";
 
 // Helper for count up animation
 const useCountUp = (end: number, duration: number = 1500) => {
