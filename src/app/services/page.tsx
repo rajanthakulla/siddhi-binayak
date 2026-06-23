@@ -12,7 +12,7 @@ const SERVICES = [
     img: "/images/service_trading_1781206620945.png",
     desc: "Multi-sector trading of certified products across industrial, safety, infrastructure, healthcare, and consumer categories through verified global suppliers.",
     sub: ["Industrial Equipment", "Safety & PPE", "Healthcare Consumables", "Infrastructure Supplies"],
-    clients: "B2B Enterprises, Public Organizations, Retail Chains"
+    clients: "B2B Enterprises, Public Organizations, Wholesale Chains"
   },
   {
     title: "Import & Export",
@@ -20,7 +20,7 @@ const SERVICES = [
     img: "/images/service_import_export_1781206632558.png",
     desc: "End-to-end import and export operations in Nepal, covering sourcing, customs coordination, regulatory compliance, and cross-border trade facilitation.",
     sub: ["Customs Clearance", "Regulatory Compliance", "Cross-Border Logistics", "Letter of Credit Handling"],
-    clients: "Manufacturing Plants, Distributors, Large Scale Retailers"
+    clients: "Manufacturing Plants, Distributors, Large Scale Wholesalers"
   },
   {
     title: "Government Supply",

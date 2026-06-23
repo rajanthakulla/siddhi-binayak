@@ -586,7 +586,7 @@ export default function Home() {
             { title: "Heavy-Duty & Utility Vehicles", desc: "Commercial vehicles, utility trucks, fleet equipment", icon: Truck },
             { title: "Energy & Power Infrastructure", desc: "Power generation, electrical systems, renewable energy components", icon: Zap },
             { title: "Construction Materials", desc: "Building materials, structural components, finishing supplies", icon: Hammer },
-            { title: "Consumer & Commercial Goods", desc: "FMCG, commercial supplies, retail inventory", icon: ShoppingCart },
+            { title: "Consumer & Commercial Goods", desc: "FMCG, commercial supplies, wholesale inventory", icon: ShoppingCart },
           ].map((item, i) => (
             <ScrollReveal key={i} delay={0.05 * i} className="h-full">
               <div className="flex flex-col h-full gap-3 p-6 bg-[#FAFAFA] rounded-3xl border border-surface-border hover:border-[#FFD5C2] transition-colors group">
