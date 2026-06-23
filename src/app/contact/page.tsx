@@ -113,8 +113,14 @@ export default function ContactPage() {
                   rel="noopener noreferrer"
                   className="group relative block w-full h-[280px] rounded-[2rem] overflow-hidden shadow-lg border border-surface-border transition-transform hover:-translate-y-1"
                 >
-                  <img src="/images/kathmandu_location_map.png" alt="Siddhi Binayak Location Map" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" />
-                  <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-300" />
+                  <iframe 
+                    src="https://maps.google.com/maps?q=Mahalaxmi+Municipality-02,Lalitpur,Nepal&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                    className="absolute inset-0 w-full h-full border-0 pointer-events-none" 
+                    allowFullScreen 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
+                  <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors duration-300" />
                   <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md px-5 py-4 rounded-xl flex items-center justify-between border border-surface-border shadow-sm transform translate-y-2 opacity-90 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
                     <div className="flex flex-col gap-0.5">
                       <h4 className="font-sans font-medium text-[15px] text-text-primary">Head Office</h4>
