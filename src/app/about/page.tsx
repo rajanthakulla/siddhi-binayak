@@ -47,7 +47,7 @@ export default function AboutPage() {
             </div>
           </ScrollReveal>
 
-          <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="max-w-4xl mx-auto relative mt-16 before:content-[''] before:hidden md:before:block before:absolute before:left-1/2 before:top-4 before:bottom-4 before:w-[1px] before:bg-[#FFD5C2]/40 before:-translate-x-1/2">
             {[
               { name: "Vertical Supply Group", desc: "Premium height safety and arboriculture equipment.", icon: Mountain },
               { name: "Prototypa", desc: "Advanced ballistics and testing technology.", icon: Settings },
@@ -58,14 +58,32 @@ export default function AboutPage() {
               { name: "PETZL", desc: "Professional climbing and work-at-height gear.", icon: Mountain },
               { name: "BAR-1", desc: "Specialized defense and security systems.", icon: Target }
             ].map((partner, idx) => (
-              <ScrollReveal key={idx} delay={0.1 * idx} className="h-full">
-                <div className="group bg-white p-6 rounded-[2rem] border border-surface-border shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 w-full h-full relative overflow-hidden flex flex-col items-center text-center">
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-accent-primary/5 rounded-full blur-3xl group-hover:bg-accent-primary/10 transition-colors duration-500 -mr-10 -mt-10 pointer-events-none" />
-                  <div className="w-16 h-16 rounded-2xl bg-[#FFF6F3] border border-[#FFD5C2]/50 flex items-center justify-center text-accent-primary mb-4 group-hover:bg-accent-primary group-hover:text-white transition-colors duration-300 shrink-0">
-                    <partner.icon className="w-8 h-8" strokeWidth={1.5} />
+              <ScrollReveal key={idx} delay={0.1}>
+                <div className={`relative flex flex-col md:flex-row ${idx % 2 === 0 ? 'md:flex-row-reverse' : ''} items-center mb-12 last:mb-0 group/timeline`}>
+                  
+                  {/* Connector Icon (Center Axis) */}
+                  <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white border-[3px] border-[#FAFAFA] shadow-[0_0_0_2px_#FFD5C2] z-10 items-center justify-center text-accent-primary group-hover/timeline:bg-accent-primary group-hover/timeline:text-white group-hover/timeline:shadow-[0_0_0_2px_#FF5E14] transition-all duration-500">
+                    <partner.icon className="w-5 h-5" strokeWidth={2} />
                   </div>
-                  <h3 className="font-sans font-semibold text-lg mb-2 text-text-primary">{partner.name}</h3>
-                  <p className="font-sans text-text-secondary text-[14px] leading-relaxed">{partner.desc}</p>
+                  
+                  {/* Empty space for one side of the timeline */}
+                  <div className="hidden md:block w-1/2" />
+
+                  {/* Card Content */}
+                  <div className={`w-full md:w-1/2 flex ${idx % 2 === 0 ? 'md:justify-start md:pl-16' : 'md:justify-end md:pr-16'}`}>
+                    <div className="group bg-white p-8 rounded-[2.5rem] border border-surface-border shadow-sm hover:shadow-[0_20px_40px_rgba(255,94,20,0.08)] hover:-translate-y-1 transition-all duration-500 w-full relative overflow-hidden flex flex-col md:text-left text-center">
+                      <div className="absolute top-0 right-0 w-32 h-32 bg-accent-primary/5 rounded-full blur-3xl group-hover:bg-accent-primary/10 transition-colors duration-500 -mr-10 -mt-10 pointer-events-none" />
+                      
+                      {/* Mobile icon (hidden on desktop since it's on the timeline) */}
+                      <div className="md:hidden w-14 h-14 rounded-2xl bg-[#FFF6F3] border border-[#FFD5C2]/50 flex items-center justify-center text-accent-primary mb-5 mx-auto group-hover:bg-accent-primary group-hover:text-white transition-colors duration-300 shrink-0">
+                        <partner.icon className="w-6 h-6" strokeWidth={1.5} />
+                      </div>
+                      
+                      <h3 className="font-sans font-semibold text-2xl mb-3 text-text-primary">{partner.name}</h3>
+                      <p className="font-sans text-text-secondary text-[16px] leading-relaxed">{partner.desc}</p>
+                    </div>
+                  </div>
+                  
                 </div>
               </ScrollReveal>
             ))}
