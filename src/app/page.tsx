@@ -248,7 +248,7 @@ export default function Home() {
           <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <ScrollReveal delay={0.2}>
               <div className="flex flex-col gap-6">
-                <div className="flex flex-col gap-4 font-sans text-[17px] text-text-secondary leading-relaxed">
+                <div className="flex flex-col gap-4 font-sans text-[17px] text-text-secondary leading-relaxed text-justify">
                   <p>
                     Siddhi Binayak Overseas Pvt. Ltd. is a Nepal-based general trading company, registered in Lalitpur, specializing in the procurement and supply of high-quality products and integrated solutions for government institutions, defense organizations, educational institutions, healthcare providers, and private enterprises across Nepal.
                   </p>
