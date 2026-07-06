@@ -654,7 +654,7 @@ export default function Home() {
               image: "https://i.pravatar.cc/150?u=anita"
             },
             {
-              text: "We highly value their strict adherence to PPMO regulations. It makes our institutional auditing processes completely stress-free, knowing every document is meticulously prepared and verified.",
+              text: "Siddhi Binayak Overseas has proven to be an exceptional partner for our large-scale infrastructure projects. Their strict adherence to PPMO regulations and transparent procurement processes give us complete confidence, making our institutional auditing processes completely stress-free.",
               name: "Prakash Koirala",
               role: "Financial Controller",
               company: "@Ministry of Infrastructure",
