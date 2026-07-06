@@ -11,7 +11,7 @@ const SERVICES = [
     icon: Globe2,
     img: "/images/service_trading_new.jpg",
     desc: "Multi-sector trading of certified products across industrial, safety, infrastructure, healthcare, and consumer categories through verified global suppliers.",
-    sub: ["Industrial Equipment", "Safety & PPE", "Healthcare Consumables", "Infrastructure Supplies"],
+    sub: ["Industrial Equipment", "Automobiles and Accessories", "Healthcare Sectors", "Infrastructure Supplies"],
     clients: "B2B Enterprises, Public Organizations, Wholesale Chains"
   },
   {
