@@ -484,21 +484,23 @@ export default function Home() {
 
       {/* SECTION 5.6: GOVERNMENT & INSTITUTIONAL SUPPLY */}
       <section className="py-24 bg-[#FAFAFA] border-y border-surface-border overflow-hidden">
-        <div className="container grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <ScrollReveal delay={0.1}>
-            <div className="flex flex-col gap-6">
-              <Badge variant="default" className="w-fit mb-2">PUBLIC PROCUREMENT</Badge>
-              <h2 className="font-sans font-medium text-4xl md:text-5xl text-text-primary leading-tight tracking-tight">
-                National Public <span className="text-accent-primary">Procurement Solutions</span>
-              </h2>
-              <p className="font-sans text-[16px] md:text-[18px] text-text-secondary leading-relaxed">
-                Navigating international trade regulations can be challenging. Siddhi Binayak Overseas Pvt. Ltd. Nepal streamlines the entire acquisition lifecycle for Nepal's state institutions, delivering an end-to-end framework that bridges global manufacturers with local requirements.
-              </p>
-              <p className="font-sans text-[16px] text-text-secondary leading-relaxed">
-                By collaborating directly with different departments and public agencies, we decode complex technical specifications and match them with top-tier international suppliers, guaranteeing that critical milestones and rigorous quality thresholds are met without delay.
-              </p>
+        <div className="container grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
+          <ScrollReveal delay={0.1} className="h-full">
+            <div className="flex flex-col h-full justify-between">
+              <div className="flex flex-col gap-6">
+                <Badge variant="default" className="w-fit mb-2">PUBLIC PROCUREMENT</Badge>
+                <h2 className="font-sans font-medium text-4xl md:text-5xl text-text-primary leading-tight tracking-tight">
+                  National Public <span className="text-accent-primary">Procurement Solutions</span>
+                </h2>
+                <p className="font-sans text-[16px] md:text-[18px] text-text-secondary leading-relaxed">
+                  Navigating international trade regulations can be challenging. Siddhi Binayak Overseas Pvt. Ltd. Nepal streamlines the entire acquisition lifecycle for Nepal's state institutions, delivering an end-to-end framework that bridges global manufacturers with local requirements.
+                </p>
+                <p className="font-sans text-[16px] text-text-secondary leading-relaxed">
+                  By collaborating directly with different departments and public agencies, we decode complex technical specifications and match them with top-tier international suppliers, guaranteeing that critical milestones and rigorous quality thresholds are met without delay.
+                </p>
+              </div>
 
-              <div className="flex flex-col gap-6 mt-4">
+              <div className="flex flex-col gap-6 mt-8">
                 {[
                   { title: "End-to-End Global Sourcing", desc: "Comprehensive assessment and multi-vendor coordination." },
                   { title: "Expedited Customs Clearance", desc: "Seamless border logistics and localized distribution." },
@@ -518,8 +520,8 @@ export default function Home() {
             </div>
           </ScrollReveal>
 
-          <ScrollReveal delay={0.3}>
-            <div className="flex flex-col gap-6 bg-white p-6 md:p-8 rounded-3xl border border-surface-border shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <ScrollReveal delay={0.3} className="h-full">
+            <div className="flex flex-col gap-6 bg-white p-6 md:p-8 rounded-3xl border border-surface-border shadow-[0_8px_30px_rgb(0,0,0,0.04)] h-full justify-between">
               <div className="flex flex-col gap-2">
                 <h3 className="font-sans font-semibold text-2xl text-text-primary">Strategic Sectors</h3>
                 <p className="font-sans text-[15px] text-text-secondary leading-relaxed">
