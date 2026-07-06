@@ -28,13 +28,7 @@ export default function AboutPage() {
           </p>
         </div>
         
-        {/* Image Showcase */}
-        <div className="container relative z-10 mt-16 max-w-5xl">
-          <div className="relative aspect-video rounded-[3rem] overflow-hidden border border-surface-border bg-[#111111] shadow-[0_20px_60px_rgba(0,0,0,0.1)] group">
-            <Image src="/images/team_photo_1781206595600.png" alt="Siddhi Binayak Team" fill className="object-cover transition-transform duration-700 group-hover:scale-105" priority />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-          </div>
-        </div>
+
         
         {/* Vanishing gradient fade into next section */}
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#FAFAFA] to-transparent pointer-events-none" />
