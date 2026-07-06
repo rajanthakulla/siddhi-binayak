@@ -120,7 +120,7 @@ export default function QuotePage() {
                       </div>
                       <div className="flex flex-col gap-2">
                         <label className="font-sans text-[14px] font-medium text-text-secondary ml-2" htmlFor="phone">Phone Number *</label>
-                        <input required type="tel" id="phone" name="phone" placeholder="+977 98XXXXXXXX" className="bg-[#FAFAFA] border border-surface-border text-text-primary rounded-2xl px-5 py-4 focus:outline-none focus:border-accent-primary focus:bg-white transition-all duration-300 font-sans placeholder:text-text-tertiary" />
+                        <input required type="tel" id="phone" name="phone" placeholder="+977 9855069501" className="bg-[#FAFAFA] border border-surface-border text-text-primary rounded-2xl px-5 py-4 focus:outline-none focus:border-accent-primary focus:bg-white transition-all duration-300 font-sans placeholder:text-text-tertiary" />
                       </div>
                     </div>
                   </div>

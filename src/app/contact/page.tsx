@@ -71,8 +71,9 @@ export default function ContactPage() {
                       </div>
                       <div className="flex flex-col gap-1 mt-1">
                         <h4 className="font-sans font-medium text-[16px] text-white">Direct Line</h4>
-                        <p className="font-sans text-[15px] text-gray-400">
-                          +977 1-4XXXXXX
+                        <p className="font-sans text-[15px] text-gray-400 flex flex-col gap-1 mt-1">
+                          <span>+977 9855069501</span>
+                          <span>+977 9851407711</span>
                         </p>
                       </div>
                     </div>
@@ -167,7 +168,7 @@ export default function ContactPage() {
                       
                       <div className="flex flex-col gap-2">
                         <label htmlFor="phone" className="font-sans text-[14px] font-medium text-text-secondary ml-2">Phone Number</label>
-                        <input required type="tel" id="phone" name="phone" placeholder="+977 98XXXXXXXX" className="w-full bg-[#FAFAFA] border border-surface-border text-text-primary rounded-2xl px-5 py-4 focus:outline-none focus:border-accent-primary focus:bg-white transition-all duration-300 font-sans placeholder:text-text-tertiary" />
+                        <input required type="tel" id="phone" name="phone" placeholder="+977 9855069501" className="w-full bg-[#FAFAFA] border border-surface-border text-text-primary rounded-2xl px-5 py-4 focus:outline-none focus:border-accent-primary focus:bg-white transition-all duration-300 font-sans placeholder:text-text-tertiary" />
                       </div>
                       
                       <div className="flex flex-col gap-2">

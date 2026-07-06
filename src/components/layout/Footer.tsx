@@ -67,7 +67,10 @@ export const Footer = () => {
               <ul className="flex flex-col gap-4">
                 <li className="flex gap-3 text-text-secondary text-[14px] font-sans items-center">
                   <span className="text-text-tertiary shrink-0"><Phone className="w-[16px] h-[16px]"/></span>
-                  +977 1-4XXXXXX
+                  <div className="flex flex-col gap-1">
+                    <span>+977 9855069501</span>
+                    <span>+977 9851407711</span>
+                  </div>
                 </li>
                 <li className="flex gap-3 text-text-secondary text-[14px] font-sans items-start">
                   <span className="text-text-tertiary shrink-0 mt-0.5"><MapPin className="w-[16px] h-[16px]"/></span>
