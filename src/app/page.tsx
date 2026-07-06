@@ -492,11 +492,14 @@ export default function Home() {
                 <h2 className="font-sans font-medium text-4xl md:text-5xl text-text-primary leading-tight tracking-tight">
                   National Public <span className="text-accent-primary">Procurement Solutions</span>
                 </h2>
-                <p className="font-sans text-[16px] md:text-[18px] text-text-secondary leading-relaxed">
-                  Navigating international trade regulations can be challenging. Siddhi Binayak Overseas Pvt. Ltd. Nepal streamlines the entire acquisition lifecycle for Nepal's state institutions, delivering an end-to-end framework that bridges global manufacturers with local requirements.
+                <p className="font-sans text-[16px] md:text-[18px] text-text-secondary leading-relaxed text-justify">
+                  Navigating international trade regulations can be challenging. Siddhi Binayak Overseas Pvt. Ltd. Nepal streamlines the entire acquisition lifecycle for Nepal's state institutions, delivering an end-to-end framework that bridges global manufacturers with local requirements. Our deep understanding of local laws combined with international standards allows us to mitigate risks and ensure smooth operations from start to finish.
                 </p>
-                <p className="font-sans text-[16px] text-text-secondary leading-relaxed">
-                  By collaborating directly with different departments and public agencies, we decode complex technical specifications and match them with top-tier international suppliers, guaranteeing that critical milestones and rigorous quality thresholds are met without delay.
+                <p className="font-sans text-[16px] text-text-secondary leading-relaxed text-justify">
+                  By collaborating directly with different departments and public agencies, we decode complex technical specifications and match them with top-tier international suppliers, guaranteeing that critical milestones and rigorous quality thresholds are met without delay. We pride ourselves on transparent communication, providing our partners with comprehensive documentation and real-time progress updates throughout the procurement journey.
+                </p>
+                <p className="font-sans text-[16px] text-text-secondary leading-relaxed text-justify">
+                  Our dedicated team of professionals brings decades of combined experience in handling large-scale government contracts. We leverage this expertise to foresee potential bottlenecks and proactively implement solutions, ensuring that essential supplies reach their destinations safely, securely, and exactly when needed to support critical national infrastructure.
                 </p>
               </div>
 
