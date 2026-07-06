@@ -88,7 +88,8 @@ export default function AboutPage() {
                 name: "Kaya Safety", 
                 desc: "Focused on designing and manufacturing industrial fall protection solutions, advanced height safety systems, and specialized rescue equipment.",
                 highlights: ["Fall Protection", "Height Safety", "Rescue Equipment"],
-                icon: LifeBuoy 
+                icon: LifeBuoy,
+                imageUrl: "/images/kaya-logo.png"
               },
               { 
                 name: "PETZL", 
