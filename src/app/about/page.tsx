@@ -53,31 +53,36 @@ export default function AboutPage() {
                 name: "Vertical Supply Group", 
                 desc: "A leading manufacturer of premium height safety and arboriculture equipment, delivering cutting-edge solutions for professionals operating in challenging vertical environments.",
                 highlights: ["Arboriculture Gear", "Rope Rescue Systems", "Fall Protection"],
-                icon: Mountain 
+                icon: Mountain,
+                imageUrl: "/images/vsg-logo.png"
               },
               { 
                 name: "Prototypa", 
                 desc: "Specialized in advanced ballistics and testing technology, providing precise measurement tools and developmental support for defense industries.",
                 highlights: ["Ballistic Testing", "Weapon Development", "Measurement Systems"],
-                icon: Settings 
+                icon: Settings,
+                imageUrl: "/images/prototypa-logo.png"
               },
               { 
                 name: "Onboard Systems Int.", 
                 desc: "Pioneering developers of helicopter cargo hook equipment, innovating advanced external load systems for civilian and military aircraft worldwide.",
                 highlights: ["Cargo Hook Equipment", "External Load Systems", "Helicopter Tech"],
-                icon: Plane 
+                icon: Plane,
+                imageUrl: "/images/onboard-logo.png"
               },
               { 
                 name: "ESS (Eye Safety)", 
                 desc: "Creating advanced Eye Safety Systems for military and tactical use. Delivering top-tier eye protection for combat, law enforcement, and rescue personnel.",
                 highlights: ["Tactical Goggles", "Ballistic Eyeshields", "Military Eyewear"],
-                icon: Eye 
+                icon: Eye,
+                imageUrl: "/images/ess-logo.png"
               },
               { 
                 name: "Zennison", 
                 desc: "Renowned for durable, high-performance tactical solutions and defense equipment, supporting military operations with robust and reliable gear.",
                 highlights: ["Tactical Gear", "Defense Equipment", "Operational Solutions"],
-                icon: Shield 
+                icon: Shield,
+                imageUrl: "/images/zennison-logo.png"
               },
               { 
                 name: "Kaya Safety", 
@@ -114,10 +119,16 @@ export default function AboutPage() {
                     <div className="group bg-white p-8 rounded-[2.5rem] border border-surface-border shadow-sm hover:shadow-[0_20px_40px_rgba(255,94,20,0.08)] hover:-translate-y-1 transition-all duration-500 w-full relative overflow-hidden flex flex-col md:text-left text-center">
                       <div className="absolute top-0 right-0 w-32 h-32 bg-accent-primary/5 rounded-full blur-3xl group-hover:bg-accent-primary/10 transition-colors duration-500 -mr-10 -mt-10 pointer-events-none" />
                       
-                      {/* Mobile icon (hidden on desktop since it's on the timeline) */}
-                      <div className="md:hidden w-14 h-14 rounded-2xl bg-[#FFF6F3] border border-[#FFD5C2]/50 flex items-center justify-center text-accent-primary mb-5 mx-auto group-hover:bg-accent-primary group-hover:text-white transition-colors duration-300 shrink-0">
-                        <partner.icon className="w-6 h-6" strokeWidth={1.5} />
-                      </div>
+                      {/* Mobile icon or Image Logo */}
+                      {partner.imageUrl ? (
+                        <div className="mb-5 h-12 flex items-center justify-center md:justify-start">
+                          <Image src={partner.imageUrl} alt={partner.name} width={120} height={48} className="object-contain h-full w-auto" />
+                        </div>
+                      ) : (
+                        <div className="md:hidden w-14 h-14 rounded-2xl bg-[#FFF6F3] border border-[#FFD5C2]/50 flex items-center justify-center text-accent-primary mb-5 mx-auto group-hover:bg-accent-primary group-hover:text-white transition-colors duration-300 shrink-0">
+                          <partner.icon className="w-6 h-6" strokeWidth={1.5} />
+                        </div>
+                      )}
                       
                       <h3 className="font-sans font-semibold text-2xl mb-3 text-text-primary">{partner.name}</h3>
                       <p className="font-sans text-text-secondary text-[15px] leading-relaxed mb-6">{partner.desc}</p>
