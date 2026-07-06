@@ -154,9 +154,9 @@ export default function WhyUsPage() {
           
           <div className="grid grid-cols-2 gap-4">
             {[
-              { val: "40+", label: "Govt Tenders Fulfilled" },
-              { val: "3+", label: "Years of Experience" },
-              { val: "50+", label: "Product Catalogues" },
+              { val: "50+", label: "Govt Tenders Fulfilled" },
+              { val: "7+", label: "Years of Experience" },
+              { val: "50+", label: "Product Categories" },
               { val: "100%", label: "On-Time Delivery" }
             ].map((stat, i) => (
               <ScrollReveal key={i} delay={0.1 * i}>

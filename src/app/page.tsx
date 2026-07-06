@@ -60,8 +60,8 @@ const StatsCapsule = () => {
     <div className="relative w-full mx-auto">
       <div className="absolute -inset-2 md:-inset-4 bg-gradient-to-r from-[#FFD5C2] via-[#FF8A65] to-[#FFD5C2] rounded-[2.5rem] md:rounded-full blur-2xl opacity-20 pointer-events-none" />
       <div className="relative bg-white border border-surface-border rounded-[2.5rem] md:rounded-full shadow-sm py-8 px-4 md:px-16 grid grid-cols-2 md:grid-cols-4 gap-6 w-full">
-        <StatItem label="Government Tenders Fulfilled" value={500} suffix="+" />
-        <StatItem label="Years of Experience" value={12} suffix="+" />
+        <StatItem label="Government Tenders Fulfilled" value={50} suffix="+" />
+        <StatItem label="Years of Experience" value={7} suffix="+" />
         <StatItem label="Product Categories" value={50} suffix="+" />
         <StatItem label="On-Time Delivery" value={100} suffix="%" />
       </div>
