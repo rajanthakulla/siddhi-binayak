@@ -253,7 +253,7 @@ export default function Home() {
                     Siddhi Binayak Overseas Pvt. Ltd. is a Nepal-based general trading company, registered in Lalitpur, specializing in the procurement and supply of high-quality products and integrated solutions for government institutions, defense organizations, educational institutions, healthcare providers, and private enterprises across Nepal.
                   </p>
                   <p>
-                    Our execution model is anchored by direct partnerships with verified international manufacturers and transparent, audit-ready delivery processes. From the initial feasibility analysis to final handover, we guarantee flawless coordination and comprehensive documentation. We operate as a strategic extension of your procurement division, delivering tailored, high-performance solutions that drive operational excellence.
+                    Our execution model is anchored by direct partnerships with verified international manufacturers and transparent, audit-ready delivery processes. From the initial feasibility analysis to final handover, we guarantee flawless coordination and comprehensive documentation. We operate as a strategic extension of your procurement division, delivering tailored, high-performance solutions that drive operational excellence. With a steadfast commitment to reliability and compliance, we continuously strive to exceed expectations. We build enduring partnerships by prioritizing trust, integrity, and sustainable value creation.
                   </p>
                 </div>
               </div>
