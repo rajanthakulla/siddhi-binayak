@@ -95,7 +95,8 @@ export default function AboutPage() {
                 name: "PETZL", 
                 desc: "World-renowned experts in professional climbing and work-at-height gear, offering innovative headlamps, harnesses, and verticality equipment.",
                 highlights: ["Professional Climbing", "Work-at-Height", "Tactical Headlamps"],
-                icon: Mountain 
+                icon: Mountain,
+                imageUrl: "/images/petzl-logo.png"
               },
               { 
                 name: "BAR-1", 
