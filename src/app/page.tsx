@@ -530,7 +530,7 @@ export default function Home() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
                 {[
                   { title: "Defense & National Security", desc: "Equipping the Nepal Army, Armed Police Force, and national defense agencies with top-tier tactical resources, specialized equipment, and secure systems.", icon: Shield },
-                  { title: "Disaster Management", desc: "Delivering rapid-deployment provisions, emergency rescue tools, and critical relief supplies to support swift and effective disaster response operations.", icon: Globe2 },
+                  { title: "Disaster Management and Rescue", desc: "Delivering rapid-deployment provisions, emergency rescue equipment, and critical relief supplies to support swift and effective disaster response and rescue operations.", icon: Globe2 },
                   { title: "Infrastructure & Power", desc: "Supplying core equipment, heavy machinery, and vital materials for large-scale state-sponsored construction and sustainable power development projects.", icon: Building },
                   { title: "Aviation Equipment & Ground Support", desc: "Aircraft parts, ground handling equipment, aviation supplies", icon: Truck }
                 ].map((sector, i) => (
