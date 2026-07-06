@@ -28,7 +28,7 @@ export default function GovernmentSupplyPage() {
                 Securing critical supplies for state institutions requires precision, strict compliance, and a robust global network. At Siddhi Binayak Overseas Pvt. Ltd. Nepal, we engineer end-to-end procurement solutions that seamlessly connect international manufacturing powerhouses with the specific demands of Nepal’s public sector.
               </p>
               <p>
-                As an authorized partner to government bodies and ministerial departments, we manage complex technical tenders from inception to delivery. By enforcing uncompromising quality controls and rigorous regulatory adherence, we ensure that every milestone is executed flawlessly, on time, and within budget.
+                As an authorized partner to government bodies and different departments, we manage complex technical tenders from inception to delivery. By enforcing uncompromising quality controls and rigorous regulatory adherence, we ensure that every milestone is executed flawlessly, on time, and within budget.
               </p>
             </div>
           </ScrollReveal>
@@ -48,7 +48,7 @@ export default function GovernmentSupplyPage() {
               </p>
             </ScrollReveal>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
@@ -171,7 +171,7 @@ export default function GovernmentSupplyPage() {
           </ScrollReveal>
           <ScrollReveal delay={0.4}>
             <Button variant="primary" size="lg" className="rounded-full px-8" asChild>
-              <Link href="/quote">Request Supply Tender <ArrowRight className="w-4 h-4 ml-2"/></Link>
+              <Link href="/quote">Request Supply Tender <ArrowRight className="w-4 h-4 ml-2" /></Link>
             </Button>
           </ScrollReveal>
         </div>
