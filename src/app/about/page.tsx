@@ -102,7 +102,8 @@ export default function AboutPage() {
                 name: "BAR-1", 
                 desc: "Delivering comprehensive tactical solutions, specialized defense systems, and state-of-the-art security technology for critical infrastructure.",
                 highlights: ["Defense Systems", "Security Tech", "Tactical Solutions"],
-                icon: Target 
+                icon: Target,
+                imageUrl: "/images/bar-1-logo.png"
               }
             ].map((partner, idx) => (
               <ScrollReveal key={idx} delay={0.1}>
