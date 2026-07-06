@@ -495,14 +495,14 @@ export default function Home() {
                 Navigating international trade regulations can be challenging. Siddhi Binayak Overseas Pvt. Ltd. Nepal streamlines the entire acquisition lifecycle for Nepal's state institutions, delivering an end-to-end framework that bridges global manufacturers with local requirements.
               </p>
               <p className="font-sans text-[16px] text-text-secondary leading-relaxed">
-                By collaborating directly with ministerial departments and public agencies, we decode complex technical specifications and match them with top-tier international suppliers, guaranteeing that critical milestones and rigorous quality thresholds are met without delay.
+                By collaborating directly with different departments and public agencies, we decode complex technical specifications and match them with top-tier international suppliers, guaranteeing that critical milestones and rigorous quality thresholds are met without delay.
               </p>
 
               <div className="flex flex-col gap-6 mt-4">
                 {[
                   { title: "End-to-End Global Sourcing", desc: "Comprehensive assessment and multi-vendor coordination." },
                   { title: "Expedited Customs Clearance", desc: "Seamless border logistics and localized distribution." },
-                  { title: "Transparent Lifecycle Reporting", desc: "Real-time milestone tracking and quality assurance." }
+                  { title: "Business Cycle", desc: "Real-time milestone tracking and quality assurance." }
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-4 group">
                     <div className="w-10 h-10 shrink-0 rounded-full bg-[#FFF6F3] text-accent-primary flex items-center justify-center mt-0.5 group-hover:bg-accent-primary group-hover:text-white transition-colors duration-300">
@@ -530,7 +530,7 @@ export default function Home() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
                 {[
                   { title: "Defense & National Security", desc: "Equipping the Nepal Army, Armed Police Force, and national defense agencies with top-tier tactical resources, specialized equipment, and secure systems.", icon: Shield },
-                  { title: "Disaster Management and Rescue", desc: "Delivering rapid-deployment provisions, emergency rescue equipment, and critical relief supplies to support swift and effective disaster response and rescue operations.", icon: Globe2 },
+                  { title: "Disaster Management", desc: "Delivering rapid-deployment provisions, emergency rescue tools, and critical relief supplies to support swift and effective disaster response operations.", icon: Globe2 },
                   { title: "Infrastructure & Power", desc: "Supplying core equipment, heavy machinery, and vital materials for large-scale state-sponsored construction and sustainable power development projects.", icon: Building },
                   { title: "Aviation Equipment & Ground Support", desc: "Aircraft parts, ground handling equipment, aviation supplies", icon: Truck }
                 ].map((sector, i) => (
