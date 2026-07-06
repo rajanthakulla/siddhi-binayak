@@ -49,14 +49,54 @@ export default function AboutPage() {
 
           <div className="max-w-4xl mx-auto relative mt-16 before:content-[''] before:hidden md:before:block before:absolute before:left-1/2 before:top-4 before:bottom-4 before:w-[1px] before:bg-[#FFD5C2]/40 before:-translate-x-1/2">
             {[
-              { name: "Vertical Supply Group", desc: "Premium height safety and arboriculture equipment.", icon: Mountain },
-              { name: "Prototypa", desc: "Advanced ballistics and testing technology.", icon: Settings },
-              { name: "Onboard Systems Int.", desc: "Helicopter cargo hook equipment.", icon: Plane },
-              { name: "ESS (Eye Safety Systems)", desc: "Eye Safety Systems for military and tactical use.", icon: Eye },
-              { name: "Zennison", desc: "Tactical gear and defense equipment.", icon: Shield },
-              { name: "Kaya Safety", desc: "Industrial fall protection solutions.", icon: LifeBuoy },
-              { name: "PETZL", desc: "Professional climbing and work-at-height gear.", icon: Mountain },
-              { name: "BAR-1", desc: "Specialized defense and security systems.", icon: Target }
+              { 
+                name: "Vertical Supply Group", 
+                desc: "A leading manufacturer of premium height safety and arboriculture equipment, delivering cutting-edge solutions for professionals operating in challenging vertical environments.",
+                highlights: ["Arboriculture Gear", "Rope Rescue Systems", "Fall Protection"],
+                icon: Mountain 
+              },
+              { 
+                name: "Prototypa", 
+                desc: "Specialized in advanced ballistics and testing technology, providing precise measurement tools and developmental support for defense industries.",
+                highlights: ["Ballistic Testing", "Weapon Development", "Measurement Systems"],
+                icon: Settings 
+              },
+              { 
+                name: "Onboard Systems Int.", 
+                desc: "Pioneering developers of helicopter cargo hook equipment, innovating advanced external load systems for civilian and military aircraft worldwide.",
+                highlights: ["Cargo Hook Equipment", "External Load Systems", "Helicopter Tech"],
+                icon: Plane 
+              },
+              { 
+                name: "ESS (Eye Safety)", 
+                desc: "Creating advanced Eye Safety Systems for military and tactical use. Delivering top-tier eye protection for combat, law enforcement, and rescue personnel.",
+                highlights: ["Tactical Goggles", "Ballistic Eyeshields", "Military Eyewear"],
+                icon: Eye 
+              },
+              { 
+                name: "Zennison", 
+                desc: "Renowned for durable, high-performance tactical solutions and defense equipment, supporting military operations with robust and reliable gear.",
+                highlights: ["Tactical Gear", "Defense Equipment", "Operational Solutions"],
+                icon: Shield 
+              },
+              { 
+                name: "Kaya Safety", 
+                desc: "Focused on designing and manufacturing industrial fall protection solutions, advanced height safety systems, and specialized rescue equipment.",
+                highlights: ["Fall Protection", "Height Safety", "Rescue Equipment"],
+                icon: LifeBuoy 
+              },
+              { 
+                name: "PETZL", 
+                desc: "World-renowned experts in professional climbing and work-at-height gear, offering innovative headlamps, harnesses, and verticality equipment.",
+                highlights: ["Professional Climbing", "Work-at-Height", "Tactical Headlamps"],
+                icon: Mountain 
+              },
+              { 
+                name: "BAR-1", 
+                desc: "Delivering comprehensive tactical solutions, specialized defense systems, and state-of-the-art security technology for critical infrastructure.",
+                highlights: ["Defense Systems", "Security Tech", "Tactical Solutions"],
+                icon: Target 
+              }
             ].map((partner, idx) => (
               <ScrollReveal key={idx} delay={0.1}>
                 <div className={`relative flex flex-col md:flex-row ${idx % 2 === 0 ? 'md:flex-row-reverse' : ''} items-center mb-12 last:mb-0 group/timeline`}>
@@ -80,7 +120,16 @@ export default function AboutPage() {
                       </div>
                       
                       <h3 className="font-sans font-semibold text-2xl mb-3 text-text-primary">{partner.name}</h3>
-                      <p className="font-sans text-text-secondary text-[16px] leading-relaxed">{partner.desc}</p>
+                      <p className="font-sans text-text-secondary text-[15px] leading-relaxed mb-6">{partner.desc}</p>
+                      
+                      <div className={`flex flex-col gap-2 mt-auto ${idx % 2 === 0 ? 'md:items-start items-center' : 'md:items-start items-center'}`}>
+                        {partner.highlights.map((highlight, i) => (
+                          <div key={i} className="flex items-center gap-3 text-[14px] text-text-secondary font-medium">
+                            <div className="w-1.5 h-1.5 rounded-full bg-accent-primary/60 shrink-0" />
+                            {highlight}
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   </div>
                   
