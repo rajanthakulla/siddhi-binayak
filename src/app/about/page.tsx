@@ -120,21 +120,20 @@ export default function AboutPage() {
                   {/* Card Content */}
                   <div className={`w-full md:w-1/2 flex ${idx % 2 === 0 ? 'md:justify-start md:pl-16' : 'md:justify-end md:pr-16'}`}>
                     <div className="group bg-white p-8 rounded-[2.5rem] border border-surface-border shadow-sm hover:shadow-[0_20px_40px_rgba(255,94,20,0.08)] hover:-translate-y-1 transition-all duration-500 w-full relative overflow-hidden flex flex-col md:text-left text-center">
-                      <div className="absolute top-0 right-0 w-32 h-32 bg-accent-primary/5 rounded-full blur-3xl group-hover:bg-accent-primary/10 transition-colors duration-500 -mr-10 -mt-10 pointer-events-none" />
+                      <div className="flex flex-row items-center justify-center md:justify-start gap-4 mb-4 z-10 relative">
+                        {partner.imageUrl ? (
+                          <div className="h-10 shrink-0 flex items-center">
+                            <Image src={partner.imageUrl} alt={partner.name} width={100} height={40} className="object-contain h-full w-auto" />
+                          </div>
+                        ) : (
+                          <div className="w-10 h-10 rounded-xl bg-[#FFF6F3] border border-[#FFD5C2]/50 flex items-center justify-center text-accent-primary group-hover:bg-accent-primary group-hover:text-white transition-colors duration-300 shrink-0">
+                            <partner.icon className="w-5 h-5" strokeWidth={1.5} />
+                          </div>
+                        )}
+                        <h3 className="font-sans font-semibold text-2xl text-text-primary text-left">{partner.name}</h3>
+                      </div>
                       
-                      {/* Mobile icon or Image Logo */}
-                      {partner.imageUrl ? (
-                        <div className="mb-5 h-12 flex items-center justify-center md:justify-start">
-                          <Image src={partner.imageUrl} alt={partner.name} width={120} height={48} className="object-contain h-full w-auto" />
-                        </div>
-                      ) : (
-                        <div className="md:hidden w-14 h-14 rounded-2xl bg-[#FFF6F3] border border-[#FFD5C2]/50 flex items-center justify-center text-accent-primary mb-5 mx-auto group-hover:bg-accent-primary group-hover:text-white transition-colors duration-300 shrink-0">
-                          <partner.icon className="w-6 h-6" strokeWidth={1.5} />
-                        </div>
-                      )}
-                      
-                      <h3 className="font-sans font-semibold text-2xl mb-3 text-text-primary">{partner.name}</h3>
-                      <p className="font-sans text-text-secondary text-[15px] leading-relaxed mb-6">{partner.desc}</p>
+                      <p className="font-sans text-text-secondary text-[15px] leading-relaxed mb-6 z-10 relative text-left md:text-left">{partner.desc}</p>
                       
                       <div className={`flex flex-col gap-2 mt-auto ${idx % 2 === 0 ? 'md:items-start items-center' : 'md:items-start items-center'}`}>
                         {partner.highlights.map((highlight, i) => (
