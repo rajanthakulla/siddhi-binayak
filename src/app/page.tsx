@@ -73,7 +73,7 @@ const FAQItem = ({ q, a }: { q: string, a: string }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="bg-[#FAFAFA] border border-surface-border rounded-2xl overflow-hidden transition-colors hover:border-[#FFD5C2]">
-      <button 
+      <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-full flex items-center justify-between p-6 text-left focus:outline-none"
       >
@@ -82,7 +82,7 @@ const FAQItem = ({ q, a }: { q: string, a: string }) => {
           <ChevronDown className="w-4 h-4" />
         </div>
       </button>
-      <div 
+      <div
         className={`transition-all duration-300 ease-in-out ${isOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'}`}
       >
         <div className="p-6 pt-0 font-sans text-[15px] text-text-secondary leading-relaxed">
@@ -107,19 +107,19 @@ const InteractiveCTABanner = () => {
 
   return (
     <section className="py-24 container">
-      <div 
+      <div
         ref={containerRef}
         onMouseMove={handleMouseMove}
         className="group relative rounded-[2rem] overflow-hidden bg-[#FF6A28] px-6 py-24 md:py-28 text-center flex flex-col items-center shadow-[0_20px_40px_-15px_rgba(255,106,40,0.3)]"
       >
         {/* Magic Mouse Glow Effect */}
-        <div 
+        <div
           className="pointer-events-none absolute inset-0 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 mix-blend-overlay"
           style={{
             background: "radial-gradient(400px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255,255,255,0.4), transparent 40%)"
           }}
         />
-        
+
         {/* Base gradient layers for soft edge glow effect */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#FF9663] via-transparent to-[#FF9663] opacity-80 pointer-events-none"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-[#FF4500] to-transparent opacity-30 pointer-events-none"></div>
@@ -131,7 +131,7 @@ const InteractiveCTABanner = () => {
           <div className="absolute top-0 right-[35%] w-[6%] h-full bg-white blur-3xl transform skew-x-6 opacity-[0.35]"></div>
           <div className="absolute top-0 right-[15%] w-[12%] h-full bg-white blur-3xl transform -skew-x-12 opacity-[0.25]"></div>
         </div>
-        
+
         {/* Subtle noise/stars */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-12 left-[25%] w-1 h-1 bg-white rounded-full opacity-80 shadow-[0_0_8px_white]"></div>
@@ -141,7 +141,7 @@ const InteractiveCTABanner = () => {
           <div className="absolute top-28 left-[18%] w-[2px] h-[2px] bg-white rounded-full opacity-70"></div>
           <div className="absolute top-14 right-[40%] w-1 h-1 bg-white rounded-full opacity-60"></div>
         </div>
-        
+
         {/* Glassy Corner Shapes */}
         <div className="absolute -top-16 -left-16 w-56 h-56 bg-gradient-to-br from-white/30 to-white/0 rounded-[3rem] backdrop-blur-sm rotate-12 shadow-[inset_0_0_20px_rgba(255,255,255,0.1)] pointer-events-none"></div>
         <div className="absolute -bottom-24 -left-16 w-64 h-64 bg-gradient-to-tr from-white/30 to-white/0 rounded-[4rem] backdrop-blur-sm -rotate-12 shadow-[inset_0_0_20px_rgba(255,255,255,0.1)] pointer-events-none"></div>
@@ -150,12 +150,12 @@ const InteractiveCTABanner = () => {
 
         <div className="relative z-10 flex flex-col items-center max-w-3xl mx-auto pointer-events-none">
           <h2 className="font-sans font-medium text-4xl md:text-[56px] text-white leading-[1.1] tracking-tight mb-5">
-            Ready to secure your<br/>supply chain?
+            Ready to secure your<br />supply chain?
           </h2>
           <p className="font-sans text-[16px] md:text-[18px] text-white/90 mb-10 tracking-wide font-light">
             Get a comprehensive quote today — full compliance, nationwide delivery.
           </p>
-          
+
           <Link href="/contact" className="pointer-events-auto">
             <Button size="lg" className="h-[52px] px-8 text-[15px] font-medium rounded-full bg-white text-[#111111] hover:bg-gray-50 hover:shadow-lg transition-all duration-300">
               Get a Free Quote
@@ -185,11 +185,11 @@ export default function Home() {
           <div className="absolute top-[20%] left-1/2 -translate-x-1/2 w-[80%] h-[80%] bg-[radial-gradient(ellipse_at_center,#FFE0D1_0%,transparent_60%)] opacity-80 blur-[80px]" />
           <div className="absolute top-[30%] left-1/2 -translate-x-1/2 w-[50%] h-[50%] bg-[radial-gradient(ellipse_at_center,#FFC1A3_0%,transparent_60%)] opacity-70 blur-[60px]" />
           <HeroAbstractUI />
-          
+
           {/* Seamless vanishing gradient to white */}
           <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-b from-transparent via-[#FFF8F5]/50 to-white" />
         </div>
-        
+
         <div className="container relative z-10 flex flex-col items-center text-center h-full max-w-4xl pt-16">
           <motion.div
             initial={{ opacity: 0, y: 40, filter: "blur(12px)", scale: 0.96 }}
@@ -198,20 +198,20 @@ export default function Home() {
           >
             <Badge variant="default" className="mb-8 border border-[#FFD5C2]">SIDDHI BINAYAK OVERSEAS PVT. LTD. NEPAL</Badge>
           </motion.div>
-          
+
           <h1 className="font-sans font-medium text-5xl md:text-6xl leading-[1.05] tracking-tight text-text-primary mb-6">
             <motion.span className="block" initial={{ opacity: 0, y: 40, filter: "blur(12px)", scale: 0.96 }} animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }} transition={{ delay: 0.12, duration: 0.8, type: "spring", bounce: 0.3, damping: 20, stiffness: 100 }}>Empowering Global Trade</motion.span>
             <motion.span className="block" initial={{ opacity: 0, y: 40, filter: "blur(12px)", scale: 0.96 }} animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }} transition={{ delay: 0.24, duration: 0.8, type: "spring", bounce: 0.3, damping: 20, stiffness: 100 }}>with <span className="text-accent-primary">Trusted Supply.</span></motion.span>
           </h1>
-          
-          <motion.p 
+
+          <motion.p
             className="font-sans text-[18px] text-text-secondary leading-relaxed max-w-2xl mb-10"
             initial={{ opacity: 0, y: 40, filter: "blur(12px)", scale: 0.96 }} animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }} transition={{ delay: 0.48, duration: 0.8, type: "spring", bounce: 0.3, damping: 20, stiffness: 100 }}
           >
             Streamlining your business by securing world-class suppliers, executing trade reliably, and providing cost-effective, high-quality sourcing solutions.
           </motion.p>
-          
-          <motion.div 
+
+          <motion.div
             className="flex flex-col sm:flex-row gap-4"
             initial={{ opacity: 0, y: 40, filter: "blur(12px)", scale: 0.96 }} animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }} transition={{ delay: 0.6, duration: 0.8, type: "spring", bounce: 0.3, damping: 20, stiffness: 100 }}
           >
@@ -219,14 +219,14 @@ export default function Home() {
             <Button variant="secondary" size="lg" asChild><Link href="/services">See how it works</Link></Button>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="flex flex-wrap justify-center gap-6 mt-12 mb-16"
             initial={{ opacity: 0, y: 40, filter: "blur(12px)", scale: 0.96 }} animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }} transition={{ delay: 0.72, duration: 0.8, type: "spring", bounce: 0.3, damping: 20, stiffness: 100 }}
           >
-            <span className="flex items-center gap-1.5 text-sm font-medium text-text-secondary"><CheckCircle2 className="text-accent-primary w-4 h-4"/> Strategic Global Sourcing</span>
-            <span className="flex items-center gap-1.5 text-sm font-medium text-text-secondary"><CheckCircle2 className="text-accent-primary w-4 h-4"/> Certified Quality Products</span>
-            <span className="flex items-center gap-1.5 text-sm font-medium text-text-secondary"><CheckCircle2 className="text-accent-primary w-4 h-4"/> Industry-Tailored Supply</span>
-            <span className="flex items-center gap-1.5 text-sm font-medium text-text-secondary"><CheckCircle2 className="text-accent-primary w-4 h-4"/> Trusted by Gov &amp; B2B</span>
+            <span className="flex items-center gap-1.5 text-sm font-medium text-text-secondary"><CheckCircle2 className="text-accent-primary w-4 h-4" /> Strategic Global Sourcing</span>
+            <span className="flex items-center gap-1.5 text-sm font-medium text-text-secondary"><CheckCircle2 className="text-accent-primary w-4 h-4" /> Certified Quality Products</span>
+            <span className="flex items-center gap-1.5 text-sm font-medium text-text-secondary"><CheckCircle2 className="text-accent-primary w-4 h-4" /> Industry-Tailored Supply</span>
+            <span className="flex items-center gap-1.5 text-sm font-medium text-text-secondary"><CheckCircle2 className="text-accent-primary w-4 h-4" /> Trusted by Gov &amp; B2B</span>
           </motion.div>
 
 
@@ -244,7 +244,7 @@ export default function Home() {
               Welcome to <span className="text-accent-primary">Siddhi Binayak Overseas Pvt. Ltd. Nepal.</span>
             </h2>
           </ScrollReveal>
-          
+
           <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <ScrollReveal delay={0.2}>
               <div className="flex flex-col gap-6">
@@ -253,12 +253,12 @@ export default function Home() {
                     Siddhi Binayak Overseas Pvt. Ltd. is a Nepal-based general trading company, registered in Lalitpur, specializing in the procurement and supply of high-quality products and integrated solutions for government institutions, defense organizations, educational institutions, healthcare providers, and private enterprises across Nepal.
                   </p>
                   <p>
-                    Our execution model is anchored by direct partnerships with verified international manufacturers and transparent, audit-ready delivery processes. From the initial feasibility analysis to final handover, we guarantee flawless coordination and comprehensive documentation. We operate as a strategic extension of your procurement division, delivering tailored, high-performance solutions that drive operational excellence. With a steadfast commitment to reliability and compliance, we continuously strive to exceed expectations. We build enduring partnerships by prioritizing trust, integrity, and sustainable value creation.
+                    Our execution model is anchored by direct partnerships with verified international manufacturers and transparent, audit-ready delivery processes. From the initial feasibility analysis to final handover, we guarantee flawless coordination and comprehensive documentation. We operate as a strategic extension of your procurement division, delivering tailored, high-performance solutions that drive operational excellence. With a steadfast commitment to reliability and compliance, we continuously strive to exceed expectations.
                   </p>
                 </div>
               </div>
             </ScrollReveal>
-            
+
             <ScrollReveal delay={0.3}>
               <div className="flex flex-col gap-5">
                 <div className="flex gap-3">
@@ -321,26 +321,26 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
-            { 
-              icon: Globe2, 
-              title: "General Trading", 
+            {
+              icon: Globe2,
+              title: "General Trading",
               desc: "Multi-sector trading of certified products across industrial, safety, infrastructure, healthcare, and consumer categories through verified global suppliers.",
               link: "/services"
             },
-            { 
-              icon: ArrowLeftRight, 
-              title: "Import & Export", 
+            {
+              icon: ArrowLeftRight,
+              title: "Import & Export",
               desc: "End-to-end import and export operations in Nepal, covering sourcing, customs coordination, regulatory compliance, and cross-border trade facilitation.",
               link: "/services"
             },
-            { 
-              icon: Shield, 
-              title: "Government Supply", 
+            {
+              icon: Shield,
+              title: "Government Supply",
               desc: "Specialized supply solutions for government departments, defense, and public institutions, aligned with tender requirements and compliance standards.",
               link: "/services"
             },
           ].map((srv, idx) => (
-            <motion.div 
+            <motion.div
               key={idx}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -353,7 +353,7 @@ export default function Home() {
                 </div>
                 <h3 className="font-sans font-medium text-xl text-text-primary mb-3">{srv.title}</h3>
                 <p className="font-sans text-[16px] text-text-secondary leading-relaxed mb-6">{srv.desc}</p>
-                
+
                 <div className="mt-auto pt-4">
                   <Link href={srv.link} className="inline-flex items-center font-sans font-medium text-[15px] text-accent-primary hover:text-[#E04B18] transition-colors">
                     Learn More <ArrowRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
@@ -394,7 +394,7 @@ export default function Home() {
               link: "/services"
             }
           ].map((srv, idx) => (
-            <motion.div 
+            <motion.div
               key={idx}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -454,7 +454,7 @@ export default function Home() {
                   {i < 4 && (
                     <div className="hidden lg:block absolute top-[4.5rem] -right-8 w-8 h-[2px] bg-[#E5E5E5] group-hover:bg-[#FFD5C2] transition-colors duration-300 z-0" />
                   )}
-                  
+
                   <div className="flex flex-col text-left p-8 bg-white border border-surface-border rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgba(255,90,31,0.08)] transition-all duration-500 h-full relative z-10 group-hover:border-[#FFD5C2]">
                     <div className="flex justify-between items-start mb-8">
                       <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#FFF6F3] to-[#FFE8DE] text-accent-primary flex items-center justify-center border border-[#FFD5C2]/50">
@@ -491,11 +491,11 @@ export default function Home() {
               <h2 className="font-sans font-medium text-4xl md:text-5xl text-text-primary leading-tight tracking-tight">
                 National Public <span className="text-accent-primary">Procurement Solutions</span>
               </h2>
-              <p className="font-sans text-[16px] md:text-[18px] text-text-secondary leading-relaxed text-justify">
+              <p className="font-sans text-[16px] md:text-[18px] text-text-secondary leading-relaxed">
                 Navigating international trade regulations can be challenging. Siddhi Binayak Overseas Pvt. Ltd. Nepal streamlines the entire acquisition lifecycle for Nepal's state institutions, delivering an end-to-end framework that bridges global manufacturers with local requirements.
               </p>
-              <p className="font-sans text-[16px] text-text-secondary leading-relaxed text-justify">
-                By collaborating directly with ministerial departments and public agencies, we decode complex technical specifications and match them with top-tier international suppliers, guaranteeing that critical milestones and rigorous quality thresholds are met without delay. Our dedicated procurement specialists maintain constant communication with all stakeholders, ensuring complete transparency throughout the supply chain. By anticipating logistical challenges and proactively mitigating risks, we ensure that even the most complex national projects are executed seamlessly.
+              <p className="font-sans text-[16px] text-text-secondary leading-relaxed">
+                By collaborating directly with ministerial departments and public agencies, we decode complex technical specifications and match them with top-tier international suppliers, guaranteeing that critical milestones and rigorous quality thresholds are met without delay.
               </p>
 
               <div className="flex flex-col gap-6 mt-4">
@@ -526,41 +526,41 @@ export default function Home() {
                   We partner with government agencies, public institutions, and industrial organizations to deliver reliable procurement and supply chain solutions across critical sectors where precision, compliance, and operational readiness are essential.
                 </p>
               </div>
-            
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
-              {[
-                { title: "Defense & National Security", desc: "Equipping the Nepal Army, Armed Police Force, and national defense agencies with top-tier tactical resources, specialized equipment, and secure systems.", icon: Shield },
-                { title: "Disaster Management", desc: "Delivering rapid-deployment provisions, emergency rescue tools, and critical relief supplies to support swift and effective disaster response operations.", icon: Globe2 },
-                { title: "Infrastructure & Power", desc: "Supplying core equipment, heavy machinery, and vital materials for large-scale state-sponsored construction and sustainable power development projects.", icon: Building },
-                { title: "Health & Civil Aviation", desc: "Providing advanced medical devices, critical healthcare supplies, and state-of-the-art civil aviation technologies to ensure safety and operational excellence.", icon: Truck }
-              ].map((sector, i) => (
-                <div key={i} className="flex flex-col gap-2 p-4 bg-[#FAFAFA] rounded-2xl border border-surface-border hover:border-[#FFD5C2] transition-colors group">
-                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#FFF6F3] to-[#FFE8DE] text-accent-primary flex items-center justify-center border border-[#FFD5C2]/50 group-hover:bg-accent-primary group-hover:text-white transition-colors duration-300">
-                    <sector.icon className="w-5 h-5" strokeWidth={1.5} />
-                  </div>
-                  <div>
-                    <h4 className="font-sans font-semibold text-[15px] text-text-primary mb-0.5">{sector.title}</h4>
-                    <p className="font-sans text-[13px] text-text-secondary leading-relaxed">{sector.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
 
-            <div className="mt-1 p-4 bg-gradient-to-br from-[#FFF6F3] to-[#FFE8DE] rounded-2xl border border-[#FFD5C2]/50 flex items-start gap-3">
-              <div className="w-10 h-10 shrink-0 rounded-full bg-white text-accent-primary flex items-center justify-center shadow-sm">
-                <FileCheck2 className="w-5 h-5" />
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
+                {[
+                  { title: "Defense & National Security", desc: "Equipping the Nepal Army, Armed Police Force, and national defense agencies with top-tier tactical resources, specialized equipment, and secure systems.", icon: Shield },
+                  { title: "Disaster Management", desc: "Delivering rapid-deployment provisions, emergency rescue tools, and critical relief supplies to support swift and effective disaster response operations.", icon: Globe2 },
+                  { title: "Infrastructure & Power", desc: "Supplying core equipment, heavy machinery, and vital materials for large-scale state-sponsored construction and sustainable power development projects.", icon: Building },
+                  { title: "Health & Civil Aviation", desc: "Providing advanced medical devices, critical healthcare supplies, and state-of-the-art civil aviation technologies to ensure safety and operational excellence.", icon: Truck }
+                ].map((sector, i) => (
+                  <div key={i} className="flex flex-col gap-2 p-4 bg-[#FAFAFA] rounded-2xl border border-surface-border hover:border-[#FFD5C2] transition-colors group">
+                    <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#FFF6F3] to-[#FFE8DE] text-accent-primary flex items-center justify-center border border-[#FFD5C2]/50 group-hover:bg-accent-primary group-hover:text-white transition-colors duration-300">
+                      <sector.icon className="w-5 h-5" strokeWidth={1.5} />
+                    </div>
+                    <div>
+                      <h4 className="font-sans font-semibold text-[15px] text-text-primary mb-0.5">{sector.title}</h4>
+                      <p className="font-sans text-[13px] text-text-secondary leading-relaxed">{sector.desc}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
-              <div>
-                <h4 className="font-sans font-semibold text-[15px] text-accent-primary mb-0.5">Regulatory Integrity</h4>
-                <p className="font-sans text-[13px] text-accent-primary/80 leading-relaxed">
-                  Strict adherence to Public Procurement Monitoring Office (PPMO) mandates, ensuring complete transparency, ethical sourcing, and exhaustive compliance documentation for every tender.
-                </p>
+
+              <div className="mt-1 p-4 bg-gradient-to-br from-[#FFF6F3] to-[#FFE8DE] rounded-2xl border border-[#FFD5C2]/50 flex items-start gap-3">
+                <div className="w-10 h-10 shrink-0 rounded-full bg-white text-accent-primary flex items-center justify-center shadow-sm">
+                  <FileCheck2 className="w-5 h-5" />
+                </div>
+                <div>
+                  <h4 className="font-sans font-semibold text-[15px] text-accent-primary mb-0.5">Regulatory Integrity</h4>
+                  <p className="font-sans text-[13px] text-accent-primary/80 leading-relaxed">
+                    Strict adherence to Public Procurement Monitoring Office (PPMO) mandates, ensuring complete transparency, ethical sourcing, and exhaustive compliance documentation for every tender.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        </ScrollReveal>
-      </div>
-    </section>
+          </ScrollReveal>
+        </div>
+      </section>
 
       {/* SECTION 5.7: PRODUCT CATEGORIES */}
       <section className="py-24 bg-white overflow-hidden">
@@ -683,7 +683,7 @@ export default function Home() {
       <section className="py-16 bg-white border-t border-surface-border flex justify-center">
         <div className="w-[calc(100%-2rem)] max-w-[1200px]">
           <div className="relative w-full bg-[#0a0f1a] rounded-[2rem] md:rounded-[3rem] px-6 py-6 md:px-8 md:py-6 flex flex-col items-center border border-[#222] shadow-2xl overflow-hidden">
-            
+
             <div className="relative z-20 flex flex-col items-center text-center mb-5">
               <Badge variant="default" className="mb-2 bg-accent-primary/20 text-accent-primary border border-accent-primary/30 text-[10px] font-semibold tracking-wider">GLOBAL CONNECTIVITY</Badge>
               <h2 className="font-sans font-medium text-3xl md:text-4xl leading-[1.1] tracking-tight text-white mb-2">
@@ -695,10 +695,10 @@ export default function Home() {
             </div>
 
             <div className="w-full relative aspect-[16/9] md:aspect-[2.4/1] rounded-[1.5rem] md:rounded-[2rem] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.5)] border border-white/10 bg-black">
-              <video 
-                autoPlay 
-                loop 
-                muted 
+              <video
+                autoPlay
+                loop
+                muted
                 playsInline
                 className="absolute inset-0 w-full h-full object-cover scale-[1.02]"
               >
