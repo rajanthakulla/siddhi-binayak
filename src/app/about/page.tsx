@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Badge } from "@/components/ui/Badge";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
-import { Target, Eye, ShieldCheck, MapPin, Building2, CheckCircle2, Factory } from "lucide-react";
+import { Target, Eye, ShieldCheck, MapPin, Building2, CheckCircle2, Factory, Mountain, Settings, Plane, Shield, LifeBuoy } from "lucide-react";
 
 export default function AboutPage() {
   return (
@@ -34,37 +34,38 @@ export default function AboutPage() {
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#FAFAFA] to-transparent pointer-events-none" />
       </section>
 
-      {/* OUR STORY - INTERACTIVE CAPSULES */}
+      {/* OEM PARTNERSHIPS */}
       <section className="py-24 bg-[#FAFAFA] overflow-hidden">
         <div className="container">
           <ScrollReveal delay={0.1}>
             <div className="flex flex-col mb-16 items-center text-center">
-              <Badge variant="default" className="mb-4">Our History</Badge>
-              <h2 className="font-sans font-medium text-4xl md:text-[52px] leading-[1.1] tracking-tight text-text-primary">A decade of reliability.</h2>
+              <Badge variant="default" className="mb-4">Global Network</Badge>
+              <h2 className="font-sans font-medium text-4xl md:text-[52px] leading-[1.1] tracking-tight text-text-primary">OEM Partnerships</h2>
+              <p className="font-sans text-[18px] text-text-secondary leading-relaxed max-w-2xl mt-4">
+                We are proud to collaborate with industry-leading manufacturers worldwide, bringing world-class equipment and solutions to Nepal.
+              </p>
             </div>
           </ScrollReveal>
 
-          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 relative">
-            {/* Center line for desktop */}
-            <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-[1px] bg-surface-border -translate-x-1/2" />
-            
+          <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { year: "2012", title: "Company Founded", desc: "Established with a vision to streamline B2B procurement across Nepal." },
-              { year: "2015", title: "First Major Contract", desc: "Awarded our first national-level supply contract for the Ministry of Home Affairs." },
-              { year: "2018", title: "OEM Partnerships", desc: "Signed exclusive distribution agreements with international manufacturers." },
-              { year: "2023", title: "Pan-Nepal Expansion", desc: "Expanded logistics network to cover all 7 provinces and 77 districts." }
-            ].map((milestone, idx) => (
-              <ScrollReveal key={idx} delay={0.1 * idx}>
-                <div className={`relative flex flex-col ${idx % 2 === 0 ? 'md:items-end md:pr-12 md:text-right' : 'md:items-start md:pl-12 md:mt-24'}`}>
-                  {/* Connector Dot */}
-                  <div className={`hidden md:block absolute top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-accent-primary shadow-[0_0_0_6px_#FAFAFA] border-2 border-white z-10 ${idx % 2 === 0 ? '-right-[8px]' : '-left-[8px]'}`} />
-                  
-                  <div className="group bg-white p-8 rounded-[2rem] border border-surface-border shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 w-full md:max-w-md relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-32 h-32 bg-accent-primary/5 rounded-full blur-3xl group-hover:bg-accent-primary/10 transition-colors duration-500 -mr-10 -mt-10" />
-                    <Badge className="mb-4 bg-accent-primary/10 text-accent-primary hover:bg-accent-primary hover:text-white transition-colors">{milestone.year}</Badge>
-                    <h3 className="font-sans font-medium text-2xl mb-3 text-text-primary">{milestone.title}</h3>
-                    <p className="font-sans text-text-secondary text-[15px] leading-relaxed">{milestone.desc}</p>
+              { name: "Vertical Supply Group", desc: "Premium height safety and arboriculture equipment.", icon: Mountain },
+              { name: "Prototypa", desc: "Advanced ballistics and testing technology.", icon: Settings },
+              { name: "Onboard Systems Int.", desc: "Helicopter cargo hook equipment.", icon: Plane },
+              { name: "ESS (Eye Safety Systems)", desc: "Eye Safety Systems for military and tactical use.", icon: Eye },
+              { name: "Zennison", desc: "Tactical gear and defense equipment.", icon: Shield },
+              { name: "Kaya Safety", desc: "Industrial fall protection solutions.", icon: LifeBuoy },
+              { name: "PETZL", desc: "Professional climbing and work-at-height gear.", icon: Mountain },
+              { name: "BAR-1", desc: "Specialized defense and security systems.", icon: Target }
+            ].map((partner, idx) => (
+              <ScrollReveal key={idx} delay={0.1 * idx} className="h-full">
+                <div className="group bg-white p-6 rounded-[2rem] border border-surface-border shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 w-full h-full relative overflow-hidden flex flex-col items-center text-center">
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-accent-primary/5 rounded-full blur-3xl group-hover:bg-accent-primary/10 transition-colors duration-500 -mr-10 -mt-10 pointer-events-none" />
+                  <div className="w-16 h-16 rounded-2xl bg-[#FFF6F3] border border-[#FFD5C2]/50 flex items-center justify-center text-accent-primary mb-4 group-hover:bg-accent-primary group-hover:text-white transition-colors duration-300 shrink-0">
+                    <partner.icon className="w-8 h-8" strokeWidth={1.5} />
                   </div>
+                  <h3 className="font-sans font-semibold text-lg mb-2 text-text-primary">{partner.name}</h3>
+                  <p className="font-sans text-text-secondary text-[14px] leading-relaxed">{partner.desc}</p>
                 </div>
               </ScrollReveal>
             ))}
