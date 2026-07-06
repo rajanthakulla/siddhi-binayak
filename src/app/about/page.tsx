@@ -122,8 +122,8 @@ export default function AboutPage() {
                     <div className="group bg-white p-8 rounded-[2.5rem] border border-surface-border shadow-sm hover:shadow-[0_20px_40px_rgba(255,94,20,0.08)] hover:-translate-y-1 transition-all duration-500 w-full relative overflow-hidden flex flex-col md:text-left text-center">
                       <div className="flex flex-row items-center justify-center md:justify-start gap-4 mb-4 z-10 relative">
                         {partner.imageUrl ? (
-                          <div className="h-10 md:h-12 shrink-0 flex items-center">
-                            <Image src={partner.imageUrl} alt={partner.name} width={120} height={48} className="object-contain h-full w-auto mix-blend-multiply" />
+                          <div className="w-20 h-10 md:w-24 md:h-12 shrink-0 flex items-center justify-start">
+                            <Image src={partner.imageUrl} alt={partner.name} width={120} height={60} className="object-contain object-left w-full h-full mix-blend-multiply" />
                           </div>
                         ) : (
                           <div className="w-10 h-10 rounded-xl bg-[#FFF6F3] border border-[#FFD5C2]/50 flex items-center justify-center text-accent-primary group-hover:bg-accent-primary group-hover:text-white transition-colors duration-300 shrink-0">
