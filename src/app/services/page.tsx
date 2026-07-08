@@ -123,11 +123,15 @@ export default function ServicesPage() {
                   </div>
 
                   {/* Actual Image */}
-                  <div className={`w-full lg:w-[40%] aspect-video lg:aspect-video relative group ${(srv as any).contain ? '' : 'border border-surface-border rounded-[2rem] overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.02)] bg-[#111111]'}`}>
-                    <div className={`relative w-full h-full ${(srv as any).contain ? '' : 'rounded-[1rem] overflow-hidden'}`}>
-                      <Image src={srv.img} alt={srv.title} fill className={`transition-transform duration-700 group-hover:scale-105 ${(srv as any).contain ? 'object-contain' : 'object-cover'}`} />
-                      {!(srv as any).contain && (
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                  <div className={`w-full lg:w-[40%] relative group ${(srv as any).contain ? '' : 'aspect-video lg:aspect-[4/3] border border-surface-border rounded-[2rem] overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.02)] bg-[#111111]'}`}>
+                    <div className={`relative w-full ${(srv as any).contain ? '' : 'h-full rounded-[1rem] overflow-hidden'}`}>
+                      {(srv as any).contain ? (
+                        <Image src={srv.img} alt={srv.title} width={1200} height={800} className="w-full h-auto transition-transform duration-700 group-hover:scale-105" />
+                      ) : (
+                        <>
+                          <Image src={srv.img} alt={srv.title} fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                        </>
                       )}
                     </div>
                   </div>
