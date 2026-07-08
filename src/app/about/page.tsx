@@ -120,13 +120,13 @@ export default function AboutPage() {
                   {/* Card Content */}
                   <div className={`w-full md:w-1/2 flex ${idx % 2 === 0 ? 'md:justify-start md:pl-16' : 'md:justify-end md:pr-16'}`}>
                     <div className="group bg-white p-8 rounded-[2.5rem] border border-surface-border shadow-sm hover:shadow-[0_20px_40px_rgba(255,94,20,0.08)] hover:-translate-y-1 transition-all duration-500 w-full relative overflow-hidden flex flex-col md:text-left text-center">
-                      <div className="flex flex-row items-center justify-center md:justify-start gap-4 mb-6 z-10 relative">
+                      <div className="flex flex-row items-center justify-center gap-4 mb-6 z-10 relative w-full">
                         {partner.imageUrl ? (
-                          <div className="w-32 h-16 md:w-48 md:h-24 shrink-0 flex items-center justify-center md:justify-start">
-                            <Image src={partner.imageUrl} alt={partner.name} width={200} height={100} className="object-contain object-center md:object-left w-full h-full mix-blend-multiply" />
+                          <div className="w-32 h-16 md:w-48 md:h-24 shrink-0 flex items-center justify-center">
+                            <Image src={partner.imageUrl} alt={partner.name} width={200} height={100} className="object-contain object-center w-full h-full mix-blend-multiply" />
                           </div>
                         ) : (
-                          <div className="w-16 h-16 rounded-xl bg-[#FFF6F3] border border-[#FFD5C2]/50 flex items-center justify-center text-accent-primary group-hover:bg-accent-primary group-hover:text-white transition-colors duration-300 shrink-0">
+                          <div className="w-16 h-16 rounded-xl bg-[#FFF6F3] border border-[#FFD5C2]/50 flex items-center justify-center text-accent-primary group-hover:bg-accent-primary group-hover:text-white transition-colors duration-300 shrink-0 mx-auto">
                             <partner.icon className="w-8 h-8" strokeWidth={1.5} />
                           </div>
                         )}
