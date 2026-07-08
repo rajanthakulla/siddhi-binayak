@@ -88,7 +88,7 @@ export default function ServicesPage() {
                 <div className={`flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16 ${isEven ? "" : "lg:flex-row-reverse"}`}>
                   
                   {/* Text Content */}
-                  <div className="w-full lg:w-[55%] flex flex-col gap-6">
+                  <div className={`w-full ${(srv as any).contain ? 'lg:w-[50%]' : 'lg:w-[55%]'} flex flex-col gap-6`}>
                     <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
                       <div className="w-16 h-16 shrink-0 rounded-2xl bg-white border border-surface-border shadow-sm flex items-center justify-center text-accent-primary">
                         <srv.icon size={32} />
@@ -123,7 +123,7 @@ export default function ServicesPage() {
                   </div>
 
                   {/* Actual Image */}
-                  <div className={`w-full lg:w-[40%] relative group border border-surface-border rounded-[2rem] overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.02)] ${(srv as any).contain ? 'bg-transparent' : 'aspect-video lg:aspect-[4/3] bg-[#111111]'}`}>
+                  <div className={`w-full ${(srv as any).contain ? 'lg:w-[45%]' : 'lg:w-[40%]'} relative group border border-surface-border rounded-[2rem] overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.02)] ${(srv as any).contain ? 'bg-transparent' : 'aspect-video lg:aspect-[4/3] bg-[#111111]'}`}>
                     <div className={`relative w-full overflow-hidden ${(srv as any).contain ? 'rounded-[2rem]' : 'h-full rounded-[1rem]'}`}>
                       {(srv as any).contain ? (
                         <Image src={srv.img} alt={srv.title} width={1200} height={800} className="w-full h-auto rounded-[2rem] transition-transform duration-700 group-hover:scale-105" />
