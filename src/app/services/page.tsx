@@ -9,7 +9,7 @@ const SERVICES = [
   {
     title: "General Trading",
     icon: Globe2,
-    img: "/images/service_trading_new.jpg",
+    img: "/images/generaltrading.jpeg",
     desc: "Multi-sector trading of certified products across industrial, safety, infrastructure, healthcare, and consumer categories through verified global suppliers.",
     sub: ["Industrial Equipment", "Automobiles and Accessories", "Healthcare Sectors", "Infrastructure Supplies"],
     clients: "B2B Enterprises, Public Organizations, Wholesale Chains"
