@@ -124,9 +124,9 @@ export default function ServicesPage() {
 
                   {/* Actual Image */}
                   <div className={`w-full lg:w-[40%] relative group border border-surface-border rounded-[2rem] overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.02)] ${(srv as any).contain ? 'bg-transparent' : 'aspect-video lg:aspect-[4/3] bg-[#111111]'}`}>
-                    <div className={`relative w-full rounded-[1rem] overflow-hidden ${(srv as any).contain ? '' : 'h-full'}`}>
+                    <div className={`relative w-full overflow-hidden ${(srv as any).contain ? 'rounded-[2rem]' : 'h-full rounded-[1rem]'}`}>
                       {(srv as any).contain ? (
-                        <Image src={srv.img} alt={srv.title} width={1200} height={800} className="w-full h-auto transition-transform duration-700 group-hover:scale-105" />
+                        <Image src={srv.img} alt={srv.title} width={1200} height={800} className="w-full h-auto rounded-[2rem] transition-transform duration-700 group-hover:scale-105" />
                       ) : (
                         <>
                           <Image src={srv.img} alt={srv.title} fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
