@@ -123,7 +123,7 @@ export default function ServicesPage() {
                   </div>
 
                   {/* Actual Image */}
-                  <div className={`w-full lg:w-[40%] aspect-video lg:aspect-[4/3] border border-surface-border rounded-[2rem] relative overflow-hidden group shadow-[0_4px_24px_rgba(0,0,0,0.02)] ${(srv as any).contain ? 'bg-white p-4 sm:p-6' : 'bg-[#111111]'}`}>
+                  <div className={`w-full lg:w-[40%] aspect-video lg:aspect-video border border-surface-border rounded-[2rem] relative overflow-hidden group shadow-[0_4px_24px_rgba(0,0,0,0.02)] ${(srv as any).contain ? 'bg-[#FAFAFA]' : 'bg-[#111111]'}`}>
                     <div className="relative w-full h-full rounded-[1rem] overflow-hidden">
                       <Image src={srv.img} alt={srv.title} fill className={`transition-transform duration-700 group-hover:scale-105 ${(srv as any).contain ? 'object-contain' : 'object-cover'}`} />
                       {!(srv as any).contain && (
