@@ -657,10 +657,10 @@ export default function Home() {
               image: "https://i.pravatar.cc/150?u=anita"
             },
             {
-              text: "Siddhi Binayak Overseas has proven to be an exceptional partner for our large-scale infrastructure projects. Their strict adherence to PPMO regulations and transparent procurement processes give us complete confidence, making our institutional auditing processes completely stress-free.",
+              text: "The exceptional quality of products and dedicated customer support from Siddhi Binayak Overseas have significantly streamlined our procurement operations. Their commitment to timely delivery and strict quality assurance is truly unmatched.",
               name: "Prakash Koirala",
-              role: "Financial Controller",
-              company: "@Ministry of Infrastructure",
+              role: "Project Director",
+              company: "@Regional Development Board",
               image: "https://i.pravatar.cc/150?u=prakash"
             }
           ].map((item, i) => (
