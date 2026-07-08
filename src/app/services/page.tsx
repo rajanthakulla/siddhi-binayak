@@ -26,6 +26,7 @@ const SERVICES = [
     title: "Government Supply",
     icon: Shield,
     img: "/images/government.png",
+    contain: true,
     desc: "Specialized supply solutions for government departments, defense, and public institutions, aligned with tender requirements and compliance standards.",
     sub: ["Defense & Security Gear", "Public Health Supplies", "Infrastructure Materials", "Tender-Specific Procurement"],
     clients: "Government of Nepal, Health Care Department, Department of Roads"
@@ -122,9 +123,13 @@ export default function ServicesPage() {
                   </div>
 
                   {/* Actual Image */}
-                  <div className="w-full lg:w-[40%] aspect-video lg:aspect-[4/3] bg-[#111111] border border-surface-border rounded-[2rem] relative overflow-hidden group shadow-[0_4px_24px_rgba(0,0,0,0.02)]">
-                    <Image src={srv.img} alt={srv.title} fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                  <div className={`w-full lg:w-[40%] aspect-video lg:aspect-[4/3] border border-surface-border rounded-[2rem] relative overflow-hidden group shadow-[0_4px_24px_rgba(0,0,0,0.02)] ${(srv as any).contain ? 'bg-white p-4 sm:p-6' : 'bg-[#111111]'}`}>
+                    <div className="relative w-full h-full rounded-[1rem] overflow-hidden">
+                      <Image src={srv.img} alt={srv.title} fill className={`transition-transform duration-700 group-hover:scale-105 ${(srv as any).contain ? 'object-contain' : 'object-cover'}`} />
+                      {!(srv as any).contain && (
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                      )}
+                    </div>
                   </div>
 
                 </div>
