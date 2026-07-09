@@ -4,7 +4,7 @@ import React from "react";
 
 const partners = [
   { imageUrl: "/images/vsg-logo.png", name: "Vertical Supply Group" },
-  { imageUrl: "/images/prototypa-logo.png", name: "Prototypa" },
+  { imageUrl: "/images/prototypa.webp", name: "Prototypa" },
   { imageUrl: "/images/onboard-logo.png", name: "Onboard Systems Int." },
   { imageUrl: "/images/ess-logo.png", name: "ESS" },
   { imageUrl: "/images/zennison-logo.png", name: "Zennison" },

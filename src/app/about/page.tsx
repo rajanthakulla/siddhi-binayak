@@ -61,7 +61,7 @@ export default function AboutPage() {
                 desc: "Specialized in advanced ballistics and testing technology, providing precise measurement tools and developmental support for defense industries.",
                 highlights: ["Ballistic Testing", "Weapon Development", "Measurement Systems"],
                 icon: Settings,
-                imageUrl: "/images/prototypa-logo.png"
+                imageUrl: "/images/prototypa.webp"
               },
               { 
                 name: "Onboard Systems Int.", 
