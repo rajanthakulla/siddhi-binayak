@@ -3,12 +3,13 @@
 import React from "react";
 
 const partners = [
-  { icon: "✳", name: "lemp" },
-  { icon: "⌘", name: "jump" },
-  { icon: "⊞", name: "aper" },
-  { icon: "⌐", name: "driep" },
-  { icon: "✳", name: "quep" },
-  { icon: "❋", name: "doin" },
+  { imageUrl: "/images/vsg-logo.png", name: "Vertical Supply Group" },
+  { imageUrl: "/images/prototypa-logo.png", name: "Prototypa" },
+  { imageUrl: "/images/onboard-logo.png", name: "Onboard Systems Int." },
+  { imageUrl: "/images/ess-logo.png", name: "ESS" },
+  { imageUrl: "/images/zennison-logo.png", name: "Zennison" },
+  { imageUrl: "/images/kaya-logo.png", name: "Kaya Safety" },
+  { imageUrl: "/images/petzl-logo.png", name: "PETZL" },
 ];
 
 export function PartnersMarquee() {
@@ -27,8 +28,11 @@ export function PartnersMarquee() {
           <div className="marquee-track">
             {items.map((partner, i) => (
               <div className="partner-item" key={i}>
-                <span className="partner-icon">{partner.icon}</span>
-                <span className="partner-name">{partner.name}</span>
+                <img 
+                  src={partner.imageUrl} 
+                  alt={partner.name} 
+                  className="h-10 md:h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" 
+                />
               </div>
             ))}
           </div>
@@ -41,7 +45,7 @@ export function PartnersMarquee() {
           background: #ffffff;
           display: flex;
           justify-content: center;
-          padding: 20px 0;
+          padding: 30px 0;
         }
 
         .partners-container {
@@ -61,9 +65,15 @@ export function PartnersMarquee() {
           position: absolute;
           top: 0;
           bottom: 0;
-          width: 180px;
+          width: 100px;
           z-index: 3;
           pointer-events: none;
+        }
+        @media (min-width: 768px) {
+          .fade-left,
+          .fade-right {
+            width: 180px;
+          }
         }
         .fade-left {
           left: 0;
@@ -93,9 +103,9 @@ export function PartnersMarquee() {
           display: flex;
           align-items: center;
           gap: 0;
-          /* Total width = num items * item width. With 18 items at ~170px each = ~3060px */
+          /* Total width = num items * item width. With 21 items at ~180px each = ~3780px */
           width: max-content;
-          animation: marquee-scroll 18s linear infinite;
+          animation: marquee-scroll 25s linear infinite;
         }
 
         @keyframes marquee-scroll {
@@ -103,7 +113,7 @@ export function PartnersMarquee() {
             transform: translateX(0);
           }
           100% {
-            /* Scroll one full set (6 partners * ~170px = ~1020px) */
+            /* Scroll one full set (7 partners) */
             transform: translateX(calc(-100% / 3));
           }
         }
@@ -111,26 +121,15 @@ export function PartnersMarquee() {
         .partner-item {
           display: flex;
           align-items: center;
-          gap: 10px;
-          padding: 0 52px;
-          white-space: nowrap;
-          color: #666666;
+          justify-content: center;
+          padding: 0 40px;
           user-select: none;
         }
 
-        .partner-icon {
-          font-size: 18px;
-          line-height: 1;
-          color: #666666;
-          opacity: 1;
-        }
-
-        .partner-name {
-          font-size: 18px;
-          font-weight: 500;
-          letter-spacing: 0.01em;
-          color: #666666;
-          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        @media (min-width: 768px) {
+          .partner-item {
+            padding: 0 60px;
+          }
         }
 
         /* Respect reduced motion preference */
