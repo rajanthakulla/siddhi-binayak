@@ -31,7 +31,7 @@ export function PartnersMarquee() {
                 <img 
                   src={partner.imageUrl} 
                   alt={partner.name} 
-                  className="h-10 md:h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" 
+                  className={`h-10 md:h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 ${partner.name === 'Prototypa' ? 'scale-[1.4]' : ''}`} 
                 />
               </div>
             ))}

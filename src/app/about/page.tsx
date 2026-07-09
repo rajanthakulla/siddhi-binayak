@@ -123,7 +123,7 @@ export default function AboutPage() {
                       <div className="flex flex-row items-center justify-center gap-4 mb-6 z-10 relative w-full">
                         {partner.imageUrl ? (
                           <div className="w-32 h-16 md:w-48 md:h-24 shrink-0 flex items-center justify-center">
-                            <Image src={partner.imageUrl} alt={partner.name} width={200} height={100} className="object-contain object-center w-full h-full mix-blend-multiply" />
+                            <Image src={partner.imageUrl} alt={partner.name} width={200} height={100} className={`object-contain object-center w-full h-full mix-blend-multiply ${partner.name === 'Prototypa' ? 'scale-[1.4]' : ''}`} />
                           </div>
                         ) : (
                           <div className="w-16 h-16 rounded-xl bg-[#FFF6F3] border border-[#FFD5C2]/50 flex items-center justify-center text-accent-primary group-hover:bg-accent-primary group-hover:text-white transition-colors duration-300 shrink-0 mx-auto">
